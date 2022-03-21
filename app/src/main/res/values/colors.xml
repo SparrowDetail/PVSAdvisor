@@ -5,6 +5,13 @@
     <color name="purple_700">#FF3700B3</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
+
+    <!--Prime Vice Studios color assets -->
+    <color name="PVS_Dark_Purple">#351644</color>
+    <color name="PVS_Purple">#5B2C73</color>
+    <color name="PVS_Yellow">#F0EA59</color>
+    <color name="PVS_Gray">#848584</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
 </resources>
