@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--user_home.xml button style -->
+    <style name="user_home_button">
+        <item name="android:layout_gravity">center</item>
+    </style>
+</resources>
