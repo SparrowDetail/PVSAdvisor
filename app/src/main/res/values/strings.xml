@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">PVSAdvisor</string>
+    <string name="app_name">PVS Advisor</string>
     <string name="title_activity_project_submission">ProjectSubmission</string>
 
     <!--Strings utilized in user_home.xml -->
