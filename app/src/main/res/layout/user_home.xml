@@ -14,22 +14,24 @@
         android:layout_marginStart="20dp"
         />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/projectUploadButton"
         android:layout_width="316dp"
         android:layout_height="122dp"
         android:layout_marginTop="20dp"
         android:text="@string/project_upload_button"
+        android:textColor="@color/white"
         android:background="@drawable/upload_home_button_1"
         style ="@style/user_home_button"
         />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/projectEditButton"
         android:layout_width="316dp"
         android:layout_height="122dp"
         android:layout_marginTop="20dp"
         android:text="@string/project_edit_button"
+        android:textColor="@color/black"
         android:background="@drawable/upload_home_button_2"
         style ="@style/user_home_button"
         />
