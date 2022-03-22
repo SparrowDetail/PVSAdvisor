@@ -5,5 +5,7 @@
     <!--Strings utilized in user_home.xml -->
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="project_upload_button">Upload a New Project</string>
+    <string name="project_edit_button">Edit/Review a Project</string>
+    <string name="profile_fragment_welcome">Welcome,</string>
 
 </resources>
