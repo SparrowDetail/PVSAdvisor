@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--user_home.xml button style -->
+    <style name="user_home_button">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:textSize">24sp</item>
+        <item name="elevation">10dp</item>
+    </style>
+</resources>

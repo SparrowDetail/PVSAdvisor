@@ -1,5 +1,13 @@
 <resources>
     <string name="app_name">PVSAdvisor</string>
+    <string name="title_activity_project_submission">ProjectSubmission</string>
+
+    <!--Strings utilized in user_home.xml -->
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="project_upload_button">Upload a New Project</string>
+    <string name="project_edit_button">Edit/Review a Project</string>
+    <string name="profile_fragment_welcome">Welcome,</string>
+
     <!-- Preference Titles -->
     <string name="messages_header">Messages</string>
     <string name="sync_header">Sync</string>

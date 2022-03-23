@@ -10,6 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PVSAdvisor">
         <activity
+            android:name=".ProjectSubmission"
+            android:exported="false"
+            android:label="@string/title_activity_project_submission"
+            android:theme="@style/Theme.PVSAdvisor.NoActionBar" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

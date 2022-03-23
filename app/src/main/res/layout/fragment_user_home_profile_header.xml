@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--Fragment that displays user information on upload home page-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserHomeProfileHeaderFragment">
+
+    <!-- TODO: Create Default Profile Image -->
+
+    <View
+        android:id="@+id/profileImageSmall"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        />
+
+    <!-- TODO:Add generic text styles to use universally -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp">
+        <TextView
+            android:id="@+id/upload_home_welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/profile_fragment_welcome"
+            />
+        <TextView
+            android:id="@+id/user_home_profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="place holder"
+            />
+    </LinearLayout>
+
+</LinearLayout>
