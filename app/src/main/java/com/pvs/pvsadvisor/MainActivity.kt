@@ -3,7 +3,7 @@ package com.pvs.pvsadvisor
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 /*
- * Main function for Prime Vice Adivsor.
+ * Main function for Prime Vice Advisor.
  * Developed by Amar, Steven, and Jacob.
  */
 class MainActivity : AppCompatActivity() {
