@@ -3,9 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.143" />
         <entry key="app/src/main/res/drawable/activity_profilepage.xml" value="0.12" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.12" />
-        <entry key="app/src/main/res/layout/activity_profile.xml" value="0.22880554199218753" />
+        <entry key="app/src/main/res/drawable/rectangle_universalprofile.xml" value="0.242" />
+        <entry key="app/src/main/res/drawable/styles_profile.xml" value="0.242" />
+        <entry key="app/src/main/res/drawable/verified_pvs_circleoutline.xml" value="0.242" />
+        <entry key="app/src/main/res/layout/activity_profile.xml" value="0.7051282051282052" />
         <entry key="app/src/main/res/layout/activity_profilesettings.xml" value="0.1328125" />
       </map>
     </option>
