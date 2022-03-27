@@ -18,7 +18,7 @@
             android:layout_alignParentTop="true"
             android:layout_marginLeft="84.82dp"
             android:layout_marginTop="37.82dp"
-            android:background="@drawable/PVSLogoDiamond" />
+            android:background="@drawable/pvs_logo_diamond" />
         <!-- PVS Circle -->
         <View
             android:id="@+id/pvs_circle"
@@ -40,9 +40,11 @@
             android:layout_alignParentTop="true"
             android:layout_marginLeft="190dp"
             android:layout_marginTop="56dp"
-            android:gravity="center_horizontal|center_vertical"
+            android:gravity="center_horizontal|center_vertical"/>
+            <!-- TODO:Add missing resources
             android:text="@string/carlos_pere"
-            android:textAppearance="@style/carlos_pere" />
+            android:textAppearance="@style/carlos_pere"/>
+            -->
         <!-- Founder / Creative Director Sequential Arts Maestro -->
         <TextView
             android:id="@+id/founder_cre"
@@ -52,13 +54,14 @@
             android:layout_alignParentTop="true"
             android:layout_marginLeft="195dp"
             android:layout_marginTop="84dp"
-            android:gravity="center_vertical"
+            android:gravity="center_vertical"/>
+            <!--TODO: Add missing resources
             android:text="@string/founder_cre"
-            android:textAppearance="@style/founder_cre" />
+            android:textAppearance="@style/founder_cre"/>-->
 
         <!-- Expertise Rectangle -->
         <View
-            android:id="@+id/rectangle_u"
+            android:id="@+id/rectangle_u1"
             android:layout_width="336dp"
             android:layout_height="36dp"
             android:layout_alignParentLeft="true"
@@ -75,22 +78,24 @@
             android:layout_alignParentTop="true"
             android:layout_marginLeft="44dp"
             android:layout_marginTop="355dp"
-            android:gravity="center_horizontal|center_vertical"
+            android:gravity="center_horizontal|center_vertical"/>
+            <!--TODO:Add missing assets
             android:text="@string/expertise"
-            android:textAppearance="@style/expertise" />
+            android:textAppearance="@style/expertise" />-->
 
         <!--Expertise Bio-Text-->
         <TextView
-            android:id="@+id/lorem_ipsum"
+            android:id="@+id/lorem_ipsum1"
             android:layout_width="302dp"
             android:layout_height="142dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:layout_marginLeft="48dp"
             android:layout_marginTop="392dp"
-            android:gravity="top"
+            android:gravity="top"/>
+            <!-- TODO:Add missing assets
             android:text="@string/lorem_ipsum"
-            android:textAppearance="@style/lorem_ipsum" />
+            android:textAppearance="@style/lorem_ipsum" />-->
 
 
         <!-- Prime Vice Studios Rectangle -->
@@ -112,21 +117,23 @@
             android:layout_alignParentTop="true"
             android:layout_marginLeft="48dp"
             android:layout_marginTop="593dp"
-            android:gravity="center_vertical"
+            android:gravity="center_vertical"/>
+            <!-- TODO:Add missing assets
             android:text="@string/prime_vice_"
-            android:textAppearance="@style/prime_vice_" />
+            android:textAppearance="@style/prime_vice_" />-->
         <!-- Prime Vice Studios Bio-Text-->
         <TextView
-            android:id="@+id/lorem_ipsum"
+            android:id="@+id/lorem_ipsum2"
             android:layout_width="302dp"
             android:layout_height="142dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:layout_marginLeft="48dp"
             android:layout_marginTop="630dp"
-            android:gravity="top"
+            android:gravity="top" />
+            <!--TODO:Add missing assets
             android:text="@string/lorem_ipsum"
-            android:textAppearance="@style/lorem_ipsum" />
+            android:textAppearance="@style/lorem_ipsum" />-->
 
         <!-- rectange_PreviousWork -->
         <View
@@ -147,9 +154,10 @@
             android:layout_alignParentTop="true"
             android:layout_marginLeft="48dp"
             android:layout_marginTop="831dp"
-            android:gravity="center_vertical"
+            android:gravity="center_vertical"/>
+            <!-- TODO:Add missing assets
             android:text="@string/previous_wo"
-            android:textAppearance="@style/previous_wo" />
+            android:textAppearance="@style/previous_wo" />-->
         <!-- Previous Works Bio-Text -->
         <TextView
             android:id="@+id/lorem_ipsum"
@@ -159,8 +167,9 @@
             android:layout_alignParentTop="true"
             android:layout_marginLeft="48dp"
             android:layout_marginTop="872dp"
-            android:gravity="top"
+            android:gravity="top" />
+            <!-- TODO:Add missing assets
             android:text="@string/lorem_ipsum"
-            android:textAppearance="@style/lorem_ipsum" />
+            android:textAppearance="@style/lorem_ipsum" />-->
     </RelativeLayout>
 </ScrollView>

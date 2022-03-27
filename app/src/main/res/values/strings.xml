@@ -7,6 +7,7 @@
     <string name="project_upload_button">Upload a New Project</string>
     <string name="project_edit_button">Edit/Review a Project</string>
     <string name="profile_fragment_welcome">Welcome,</string>
+    <string name="user_home_profile">Profile</string>
 
     <!-- Preference Titles -->
     <string name="messages_header">Messages</string>
