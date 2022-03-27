@@ -8,12 +8,17 @@
         <entry key="app/src/main/res/drawable/rectangle_universalprofile.xml" value="0.181" />
         <entry key="app/src/main/res/drawable/upload_home_button_1.xml" value="0.181" />
         <entry key="app/src/main/res/drawable/upload_home_button_2.xml" value="0.2765" />
+        <entry key="app/src/main/res/drawable/upload_next_button.xml" value="0.181" />
+        <entry key="app/src/main/res/drawable/upload_save_button.xml" value="0.181" />
         <entry key="app/src/main/res/drawable/verified_pvs_circleoutline.xml" value="0.181" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_profile.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_profilesettings.xml" value="0.24583333333333332" />
         <entry key="app/src/main/res/layout/activity_project_submission.xml" value="0.24583333333333332" />
+        <entry key="app/src/main/res/layout/activity_upload_main.xml" value="0.24583333333333332" />
+        <entry key="app/src/main/res/layout/fragment_upload_next_save.xml" value="0.24583333333333332" />
         <entry key="app/src/main/res/layout/fragment_user_home_profile_header.xml" value="0.67" />
+        <entry key="app/src/main/res/layout/upload_catagory_select.xml" value="0.33" />
         <entry key="app/src/main/res/layout/user_home.xml" value="0.5" />
         <entry key="app/src/main/res/layout/user_home_menu.xml" value="0.24583333333333332" />
       </map>

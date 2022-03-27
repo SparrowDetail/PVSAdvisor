@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">PVSAdvisor</string>
+    <string name="app_name">PVS Advisor</string>
     <string name="title_activity_project_submission">ProjectSubmission</string>
 
     <!--Strings utilized in user_home.xml -->
@@ -8,6 +8,10 @@
     <string name="project_edit_button">Edit/Review a Project</string>
     <string name="profile_fragment_welcome">Welcome,</string>
     <string name="user_home_profile">Profile</string>
+
+    <!--Strings utilized in project upload functionality -->
+    <string name="project_save_button">Save</string>
+    <string name="project_next_button">Next</string>
 
     <!-- Preference Titles -->
     <string name="messages_header">Messages</string>
@@ -23,4 +27,6 @@
     <string name="attachment_summary_on">Automatically download attachments for incoming emails
     </string>
     <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
