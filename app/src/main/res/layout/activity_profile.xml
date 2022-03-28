@@ -41,7 +41,8 @@
             android:layout_marginLeft="190dp"
             android:layout_marginTop="56dp"
             android:gravity="center_horizontal|center_vertical"/>
-            <!-- TODO:Add missing resources
+            <!--
+            TODO:Add missing resources
             android:text="@string/carlos_pere"
             android:textAppearance="@style/carlos_pere"/>
             -->
@@ -81,7 +82,8 @@
             android:gravity="center_horizontal|center_vertical"/>
             <!--TODO:Add missing assets
             android:text="@string/expertise"
-            android:textAppearance="@style/expertise" />-->
+            android:textAppearance="@style/expertise" />
+            -->
 
         <!--Expertise Bio-Text-->
         <TextView
@@ -95,7 +97,8 @@
             android:gravity="top"/>
             <!-- TODO:Add missing assets
             android:text="@string/lorem_ipsum"
-            android:textAppearance="@style/lorem_ipsum" />-->
+            android:textAppearance="@style/lorem_ipsum" />
+            -->
 
 
         <!-- Prime Vice Studios Rectangle -->
@@ -120,7 +123,8 @@
             android:gravity="center_vertical"/>
             <!-- TODO:Add missing assets
             android:text="@string/prime_vice_"
-            android:textAppearance="@style/prime_vice_" />-->
+            android:textAppearance="@style/prime_vice_" />
+            -->
         <!-- Prime Vice Studios Bio-Text-->
         <TextView
             android:id="@+id/lorem_ipsum2"
@@ -170,6 +174,7 @@
             android:gravity="top" />
             <!-- TODO:Add missing assets
             android:text="@string/lorem_ipsum"
-            android:textAppearance="@style/lorem_ipsum" />-->
+            android:textAppearance="@style/lorem_ipsum" />
+            -->
     </RelativeLayout>
 </ScrollView>

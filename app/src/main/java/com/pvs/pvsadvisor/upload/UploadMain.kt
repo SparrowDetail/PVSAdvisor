@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.Button
 import androidx.fragment.app.add
 import androidx.fragment.app.commit
+import androidx.fragment.app.replace
 import com.pvs.pvsadvisor.R
 
 /**
@@ -32,10 +33,15 @@ class UploadMain : AppCompatActivity() {
             finish()
         }
 
+        //Activity next button
         val fragNextButton = findViewById<Button>(R.id.uploadNextButton)
         fragNextButton.setOnClickListener {
             //TODO: Set view data to Database
-
+            supportFragmentManager.commit {
+                replace<UploadTitleCollectionFragment>(R.id.uploadMainFragmentView)
+                setReorderingAllowed(true)
+                addToBackStack("category")
+            }
         }
     }
 
