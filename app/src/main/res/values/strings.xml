@@ -12,6 +12,8 @@
     <!--Strings utilized in project upload functionality -->
     <string name="project_save_button">Save</string>
     <string name="project_next_button">Next</string>
+    <string name="category_title">Select Category</string>
+    <string name="category_instruction">Which categories best describe your project? (select up to 3)</string>
 
     <!-- Preference Titles -->
     <string name="messages_header">Messages</string>

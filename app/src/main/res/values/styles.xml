@@ -7,4 +7,20 @@
         <item name="android:textSize">24sp</item>
         <item name="elevation">10dp</item>
     </style>
+
+    <!-- Upload title Style -->
+    <style name="upload_title">
+        <item name="android:layout_marginTop">60dp</item>
+        <item name="android:textSize">36sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <!-- Upload instruction style -->
+    <style name="upload_instruction">
+        <item name="android:layout_marginStart">72dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/PVS_Purple</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
 </resources>
