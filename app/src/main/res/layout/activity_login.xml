@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -14,7 +14,7 @@
         android:text="@string/login"
         android:textAppearance="@style/log_in" />
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -24,7 +24,7 @@
         android:text="@string/please_login"
         android:textAppearance="@style/please_log_" />
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/textView_email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -34,7 +34,7 @@
         android:text="@string/email"
         android:textAppearance="@style/please_log_" />
 
-    <EditText
+    <androidx.appcompat.widget.AppCompatEditText
         android:id="@+id/editTextTextEmailAddress"
         android:layout_width="290dp"
         android:layout_height="50dp"
@@ -47,7 +47,7 @@
         android:autofillHints="" />
 
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/textView_password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -58,7 +58,7 @@
         android:text="@string/password"
         android:textAppearance="@style/please_log_" />
 
-    <EditText
+    <androidx.appcompat.widget.AppCompatEditText
         android:id="@+id/editTextTextPassword"
         android:layout_width="290dp"
         android:layout_height="50dp"
@@ -70,7 +70,7 @@
         tools:ignore="SpeakableTextPresentCheck"
         android:autofillHints="" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/b_create"
         android:layout_width="300dp"
         android:layout_height="67dp"
@@ -83,7 +83,7 @@
         android:textSize="24sp"
         tools:ignore="DuplicateSpeakableTextCheck" />
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/textView_newuser"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -94,7 +94,7 @@
         android:text="@string/new_user"
         android:textAppearance="@style/new_user_" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/b_signup"
         android:layout_width="300dp"
         android:layout_height="67dp"
