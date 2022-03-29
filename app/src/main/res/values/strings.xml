@@ -58,4 +58,7 @@
     <string name="password_sign">Password</string>
     <string name="repeat_password">Repeat Password</string>
     <string name="create_account">CREATE ACCOUNT</string>
+    <string name="valueExpertise">Expertise</string>
+    <string name="valuePreviousWork">Previous Work</string>
+    <string name="valueConnections">Connections</string>
 </resources>
