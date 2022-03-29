@@ -3,28 +3,28 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/auesports/AndroidStudioProjects/PVSAdvisor/app/src/main/res/drawable/edittextbackground.xml" value="0.136" />
+        <entry key="..\:/Users/auesports/AndroidStudioProjects/PVSAdvisor/app/src/main/res/drawable/edittextbackgroundtext.xml" value="0.3875" />
+        <entry key="..\:/Users/auesports/AndroidStudioProjects/PVSAdvisor/app/src/main/res/drawable/login_buttons.xml" value="0.3875" />
+        <entry key="..\:/Users/auesports/AndroidStudioProjects/PVSAdvisor/app/src/main/res/drawable/signup_buttons.xml" value="0.3875" />
+        <entry key="..\:/Users/auesports/AndroidStudioProjects/PVSAdvisor/app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="..\:/Users/auesports/AndroidStudioProjects/PVSAdvisor/app/src/main/res/layout/activity_signup.xml" value="0.25" />
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.143" />
+        <entry key="app/src/main/res/drawable/activity_profilepage.xml" value="0.12" />
         <entry key="app/src/main/res/drawable/ic_baseline_arrow_back_ios_24.xml" value="0.181" />
         <entry key="app/src/main/res/drawable/ic_baseline_menu_24.xml" value="0.181" />
-        <entry key="app/src/main/res/drawable/rectangle_universalprofile.xml" value="0.181" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.12" />
+        <entry key="app/src/main/res/drawable/rectangle_universalprofile.xml" value="0.242" />
+        <entry key="app/src/main/res/drawable/styles_profile.xml" value="0.242" />
         <entry key="app/src/main/res/drawable/upload_home_button_1.xml" value="0.181" />
         <entry key="app/src/main/res/drawable/upload_home_button_2.xml" value="0.2765" />
-        <entry key="app/src/main/res/drawable/upload_next_button.xml" value="0.181" />
-        <entry key="app/src/main/res/drawable/upload_save_button.xml" value="0.181" />
-        <entry key="app/src/main/res/drawable/verified_pvs_circleoutline.xml" value="0.181" />
+        <entry key="app/src/main/res/drawable/verified_pvs_circleoutline.xml" value="0.242" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/activity_profile.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_profilesettings.xml" value="0.24583333333333332" />
+        <entry key="app/src/main/res/layout/activity_profile.xml" value="0.7051282051282052" />
+        <entry key="app/src/main/res/layout/activity_profilesettings.xml" value="0.1328125" />
         <entry key="app/src/main/res/layout/activity_project_submission.xml" value="0.24583333333333332" />
-        <entry key="app/src/main/res/layout/activity_upload_main.xml" value="0.24583333333333332" />
-        <entry key="app/src/main/res/layout/fragment_upload_next_save.xml" value="0.24583333333333332" />
         <entry key="app/src/main/res/layout/fragment_user_home_profile_header.xml" value="0.67" />
-        <entry key="app/src/main/res/layout/upload_catagory_select.xml" value="0.33" />
-        <entry key="app/src/main/res/layout/upload_category_select.xml" value="0.20478837109876016" />
-        <entry key="app/src/main/res/layout/upload_main_activity.xml" value="0.20478837109876016" />
-        <entry key="app/src/main/res/layout/upload_title_collection.xml" value="0.5" />
-        <entry key="app/src/main/res/layout/upload_title_request.xml" value="0.20478837109876016" />
         <entry key="app/src/main/res/layout/user_home.xml" value="0.5" />
-        <entry key="app/src/main/res/layout/user_home_menu.xml" value="0.24583333333333332" />
       </map>
     </option>
   </component>

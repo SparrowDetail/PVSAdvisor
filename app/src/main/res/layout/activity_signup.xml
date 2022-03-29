@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:text="SIGN UP"
+        android:textAppearance="@style/log_in" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="15dp"
+        android:text="Create a new account"
+        android:textAppearance="@style/please_log_" />
+
+    <TextView
+        android:id="@+id/textView_firstname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_alignLeft="@+id/editTextTextFirstName"
+        android:layout_marginBottom="10dp"
+        android:text="First Name"
+        android:textAppearance="@style/please_log_" />
+
+    <EditText
+        android:id="@+id/editTextTextFirstName"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textView_firstname"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/edittextbackground"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+
+    <TextView
+        android:id="@+id/textView_lastname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextTextFirstName"
+        android:layout_alignStart="@+id/editTextTextLastName"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Last Name"
+        android:textAppearance="@style/please_log_" />
+
+    <EditText
+        android:id="@+id/editTextTextLastName"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textView_lastname"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/edittextbackground"
+        android:ems="10"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/textView_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextTextLastName"
+        android:layout_alignLeft="@id/editTextTextEmailAddress"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Email"
+        android:textAppearance="@style/please_log_" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textView_email"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/edittextbackground"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/textView_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextTextEmailAddress"
+        android:layout_alignLeft="@id/editTextTextPassword"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Password"
+        android:textAppearance="@style/please_log_" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textView_password"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/edittextbackground"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/textView_repeatpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextTextPassword"
+        android:layout_alignLeft="@+id/editTextTextRepeatPassword"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Repeat Password"
+        android:textAppearance="@style/please_log_" />
+
+    <EditText
+        android:id="@+id/editTextTextRepeatPassword"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textView_repeatpassword"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/edittextbackground"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/b_login"
+        android:layout_width="300dp"
+        android:layout_height="67dp"
+        android:layout_below="@+id/editTextTextRepeatPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:textSize="24sp"
+        android:textAppearance="@style/please_log_"
+        android:background="@drawable/login_buttons"
+        android:text="CREATE ACCOUNT" />
+
+
+
+
+</RelativeLayout>
