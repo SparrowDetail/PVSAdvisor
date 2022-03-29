@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:drawable="@color/PVS_Purple"/>
+
+    <item
+        android:drawable="@drawable/ic_pvs_logo_diamond_removebg_preview"
+        android:gravity="center" />
+
+</layer-list>

@@ -22,4 +22,12 @@
     <style name="Theme.PVSAdvisor.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.PVSAdvisor.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- Theme for splash -->
+    <style name="splashScreenTheme" parent="Theme.MaterialComponents.NoActionBar">
+
+        <item name="android:windowBackground">@drawable/splash_image</item>
+        <item name="android:statusBarColor">@color/PVS_Purple</item>
+
+    </style>
 </resources>
