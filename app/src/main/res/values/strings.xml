@@ -16,6 +16,18 @@
     <string name="category_instruction">Which categories best describe your project? (select up to 3)</string>
     <string name="title_collection_title">Title Your Project</string>
     <string name="title_collection_instruction">Give your project a descriptive name</string>
+    <string name="file_upload_title">Upload Your Project Files</string>
+    <string name="file_upload_instruction">To ensure the safety and integrity of your original artwork, please:</string>
+    <string name="file_upload_ins1">Add a unique water mark to all files you submit</string>
+    <string name="file_upload_ins2">Use files of a lower quality that can not be replicated</string>
+    <string name="file_upload_ins3">Omit or replace any sensitive information pertaining to you or anyone else</string>
+    <string name="file_upload_button">Upload File</string>
+
+    <!-- Upload category selection option strings -->
+    <string name="select_character_design">Character Design</string>
+    <string name="select_storyboarding">Storyboarding</string>
+    <string name="select_sequential_art">Sequential Art</string>
+    <string name="select_comic_book">Comic Book</string>
 
     <!-- Preference Titles -->
     <string name="messages_header">Messages</string>

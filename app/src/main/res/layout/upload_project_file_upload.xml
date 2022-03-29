@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/FileUpload_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/file_upload_title"
+        style="@style/upload_title"/>
+
+    <TextView
+        android:id="@+id/titlePage_ins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/FileUpload_title"
+        android:text="@string/file_upload_instruction"
+        style="@style/upload_instruction"/>
+
+    <LinearLayout
+        android:id="@+id/instruction_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/titlePage_ins"
+        android:layout_marginTop="60dp"
+        android:background="@color/PVS_Gray">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/file_upload_ins1"
+            style="@style/file_upload_creative_commons"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/file_upload_ins2"
+            style="@style/file_upload_creative_commons"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/file_upload_ins3"
+            style="@style/file_upload_creative_commons"/>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/file_upload_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/file_upload_button"
+        android:text="@string/file_upload_button"
+        android:textSize="36sp"
+        android:layout_marginBottom="86dp"
+        android:elevation="4dp" />
+</RelativeLayout>

@@ -11,31 +11,25 @@
         />
 
     <LinearLayout
+        android:id="@+id/save_next_layout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/save_next_layout"
-        android:layout_centerHorizontal="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="24dp">
+        style="@style/nextSaveLayout">
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/uploadSaveButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/project_save_button"
             android:background="@drawable/upload_save_button"
-            android:textSize="36sp"
+            style="@style/uploadSaveStyle"
             />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/uploadNextButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/project_next_button"
-            android:layout_marginStart="50dp"
             android:background="@drawable/upload_next_button"
-            android:textColor="@color/white"
-            android:textSize="36sp"
+            style="@style/uploadNextStyle"
             />
     </LinearLayout>
 

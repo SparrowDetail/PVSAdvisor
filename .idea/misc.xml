@@ -10,6 +10,8 @@
         <entry key="..\:/Users/AshlandACM/StudioProjects/PVSAdvisor/app/src/main/res/layout/activity_splash.xml" value="0.358695652173913" />
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.143" />
         <entry key="app/src/main/res/drawable/activity_profilepage.xml" value="0.12" />
+        <entry key="app/src/main/res/drawable/file_upload_button.xml" value="0.199" />
+        <entry key="app/src/main/res/drawable/file_upload_instructions_background.xml" value="0.199" />
         <entry key="app/src/main/res/drawable/ic_baseline_arrow_back_ios_24.xml" value="0.181" />
         <entry key="app/src/main/res/drawable/ic_baseline_menu_24.xml" value="0.181" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.12" />
@@ -17,12 +19,20 @@
         <entry key="app/src/main/res/drawable/styles_profile.xml" value="0.242" />
         <entry key="app/src/main/res/drawable/upload_home_button_1.xml" value="0.181" />
         <entry key="app/src/main/res/drawable/upload_home_button_2.xml" value="0.2765" />
+        <entry key="app/src/main/res/drawable/upload_next_button.xml" value="0.199" />
+        <entry key="app/src/main/res/drawable/upload_title_box.xml" value="0.199" />
         <entry key="app/src/main/res/drawable/verified_pvs_circleoutline.xml" value="0.242" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_profile.xml" value="0.7051282051282052" />
         <entry key="app/src/main/res/layout/activity_profilesettings.xml" value="0.1328125" />
         <entry key="app/src/main/res/layout/activity_project_submission.xml" value="0.24583333333333332" />
+        <entry key="app/src/main/res/layout/activity_signup.xml" value="0.20179563916203505" />
         <entry key="app/src/main/res/layout/fragment_user_home_profile_header.xml" value="0.67" />
+        <entry key="app/src/main/res/layout/upload_category_select.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/upload_main_activity.xml" value="0.2470534904805077" />
+        <entry key="app/src/main/res/layout/upload_project_file_upload.xml" value="0.2817443351859769" />
+        <entry key="app/src/main/res/layout/upload_title_collection.xml" value="0.5" />
         <entry key="app/src/main/res/layout/user_home.xml" value="0.5" />
       </map>
     </option>
