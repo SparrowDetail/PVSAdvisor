@@ -17,6 +17,42 @@
         android:layout_below="@id/FileUpload_title"
         android:text="@string/file_upload_instruction"
         style="@style/upload_instruction"/>
+    
+    <RelativeLayout
+        android:id="@+id/thumbnail_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titlePage_ins"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:visibility="invisible">
+
+        <!-- TODO: Programmatically round corners -->
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/thumbnail_image"
+            android:layout_width="333dp"
+            android:layout_height="142dp" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@id/thumbnail_image"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/thumbnail_edit_button"
+            android:text="@string/thumbnail_edit_button"
+            android:textColor="@color/white"
+            android:textSize="24sp"/>
+    </RelativeLayout>
+
+    <ListView
+        android:layout_width="333dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/thumbnail_view"
+        android:layout_above="@id/file_upload_button"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:visibility="invisible"/>
 
     <LinearLayout
         android:id="@+id/instruction_layout"
@@ -26,7 +62,8 @@
         android:layout_centerInParent="true"
         android:layout_below="@id/titlePage_ins"
         android:layout_marginTop="60dp"
-        android:background="@color/PVS_Gray">
+        android:background="@color/PVS_Gray"
+        >
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
