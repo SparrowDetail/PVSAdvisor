@@ -18,6 +18,9 @@ class UploadMain : AppCompatActivity() {
         //TODO: Implement content view progress in DB
         setContentView(R.layout.upload_main_activity)
 
+        //For saved project, pull upload step from database
+        var uploadStep:Int = 0
+
         //Implement fragment data
         if (savedInstanceState == null) {
             supportFragmentManager.commit {
@@ -37,10 +40,16 @@ class UploadMain : AppCompatActivity() {
         val fragNextButton = findViewById<Button>(R.id.uploadNextButton)
         fragNextButton.setOnClickListener {
             //TODO: Set view data to Database
-            supportFragmentManager.commit {
-                replace<UploadTitleCollectionFragment>(R.id.uploadMainFragmentView)
-                setReorderingAllowed(true)
-                addToBackStack("category")
+            when (uploadStep) {
+                0 -> {
+                    supportFragmentManager.commit {
+                        replace<UploadTitleCollectionFragment>(R.id.uploadMainFragmentView)
+                        setReorderingAllowed(true)
+                        addToBackStack("category")
+                    }
+                    uploadStep += 1
+                }
+                else -> {}
             }
         }
     }
