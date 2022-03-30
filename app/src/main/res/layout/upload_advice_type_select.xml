@@ -82,7 +82,47 @@
                     style="@style/category_selection_text"/>
             </RadioGroup>
 
+            <TextView
+                android:id="@+id/advice_ins2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/advice_type_radial"
+                android:text="@string/advice_ins2"
+                android:layout_marginTop="10dp"
+                style="@style/upload_instruction"/>
+
+            <EditText
+                android:id="@+id/advice_det_edit_text"
+                android:layout_width="335dp"
+                android:layout_height="270dp"
+                android:layout_below="@id/advice_ins2"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/advice_detail_edit_text"
+                />
+
+            <TextView
+                android:id="@+id/advice_feedback_fmt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/advice_det_edit_text"
+                android:layout_alignStart="@id/advice_det_edit_text"
+                android:layout_marginTop="15dp"
+                android:textSize="18sp"
+                android:textColor="@color/PVS_Purple"
+                android:text="@string/advice_file_format"/>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/advice_feedback_fmt"
+                android:layout_alignStart="@id/advice_feedback_fmt"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="30dp">
+
+            </RadioGroup>
         </RelativeLayout>
+
     </ScrollView>
 
 </RelativeLayout>
