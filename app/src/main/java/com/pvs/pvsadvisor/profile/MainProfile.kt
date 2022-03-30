@@ -12,6 +12,6 @@ class MainProfile : AppCompatActivity() {
         super.onCreate(savedInstanceState, persistentState)
         setContentView(R.layout.activity_profile)
 
-        btn_EditProfile
+        //btn_EditProfile
     }
 }
