@@ -22,6 +22,7 @@
     <string name="file_upload_ins2">Use files of a lower quality that can not be replicated</string>
     <string name="file_upload_ins3">Omit or replace any sensitive information pertaining to you or anyone else</string>
     <string name="file_upload_button">Upload File</string>
+    <string name="thumbnail_edit_button">Edit</string>
 
     <!-- Upload category selection option strings -->
     <string name="select_character_design">Character Design</string>
