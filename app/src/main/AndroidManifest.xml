@@ -13,7 +13,7 @@
             android:name=".upload.UploadMain"
             android:exported="false" />
         <activity
-            android:name=".UserHomeMain"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
