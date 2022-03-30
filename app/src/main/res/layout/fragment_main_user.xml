@@ -50,7 +50,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="56dp"
+            android:layout_marginTop="72dp"
             android:text="@string/valueConnections"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imgView_ProfilePic" />
@@ -119,13 +119,13 @@
         <!--            tools:layout_editor_absoluteY="335dp"/>-->
 
         <Button
-            android:id="@+id/btn_EditProfile"
+            android:id="@+id/btn_ProfileSettings"
             android:layout_width="158dp"
             android:layout_height="48dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
             android:background="#351644"
-            android:text="Edit Profile"
+            android:text="Settings"
             android:textColor="#FFFFFF"
             android:textSize="10sp"
             app:iconPadding="8dp"

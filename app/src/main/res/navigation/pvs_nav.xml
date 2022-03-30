@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/pvs_nav"
-    app:startDestination="@id/mainProfile">
+    app:startDestination="@id/Home">
     <fragment
         android:id="@+id/Home"
         android:name="com.pvs.pvsadvisor.UserHomeProfileHeaderFragment"
@@ -18,5 +18,5 @@
         android:id="@+id/Profile"
         android:name="com.pvs.pvsadvisor.profile.MainProfileFragment"
         android:label="mainfragment_scrolling_profile"
-        tools:layout="@layout/mainfragment_scrolling_profile" />
+        tools:layout="@layout/fragment_main_user" />
 </navigation>
