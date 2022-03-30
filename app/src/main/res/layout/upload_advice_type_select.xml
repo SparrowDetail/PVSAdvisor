@@ -25,6 +25,63 @@
                 android:text="@string/advice_ins1"
                 style="@style/upload_instruction"/>
 
+            <RadioGroup
+                android:id="@+id/advice_type_radial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/advice_ins"
+                android:layout_below="@id/advice_ins"
+                android:layout_marginTop="10dp">
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/adv_skill_dev"
+                    android:text="@string/adv_skill_dev"
+                    style="@style/category_selection_text"/>
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/adv_pricing"
+                    android:text="@string/adv_pricing"
+                    style="@style/category_selection_text"/>
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/adv_sales"
+                    android:text="@string/adv_sales"
+                    style="@style/category_selection_text"/>
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/adv_promote"
+                    android:text="@string/adv_promote"
+                    style="@style/category_selection_text"/>
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/adv_product"
+                    android:text="@string/adv_product"
+                    style="@style/category_selection_text"/>
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/adv_find_supp"
+                    android:text="@string/adv_find_supp"
+                    style="@style/category_selection_text"/>
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/adv_budget"
+                    android:text="@string/adv_budget"
+                    style="@style/category_selection_text"/>
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/adv_business"
+                    android:text="@string/adv_business"
+                    style="@style/category_selection_text"/>
+            </RadioGroup>
+
         </RelativeLayout>
     </ScrollView>
 
