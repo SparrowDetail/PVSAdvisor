@@ -93,7 +93,7 @@
 
             <EditText
                 android:id="@+id/advice_det_edit_text"
-                android:text=""
+                android:text="Fill"
                 android:layout_width="335dp"
                 android:layout_height="270dp"
                 android:layout_below="@id/advice_ins2"
