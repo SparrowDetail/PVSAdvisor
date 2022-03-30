@@ -119,7 +119,24 @@
                 android:layout_alignStart="@id/advice_feedback_fmt"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="30dp">
-
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fmt_pdf"
+                    android:text="@string/fmt_pdf"
+                    style="@style/category_selection_text"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fmt_jpeg"
+                    android:text="@string/fmt_jpeg"
+                    style="@style/category_selection_text"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fmt_png"
+                    android:text="@string/fmt_png"
+                    style="@style/category_selection_text"/>
             </RadioGroup>
         </RelativeLayout>
 
