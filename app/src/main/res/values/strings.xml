@@ -23,12 +23,32 @@
     <string name="file_upload_ins3">Omit or replace any sensitive information pertaining to you or anyone else</string>
     <string name="file_upload_button">Upload File</string>
     <string name="thumbnail_edit_button">Edit</string>
+    
 
     <!-- Upload category selection option strings -->
     <string name="select_character_design">Character Design</string>
     <string name="select_storyboarding">Storyboarding</string>
     <string name="select_sequential_art">Sequential Art</string>
     <string name="select_comic_book">Comic Book</string>
+    
+    <!-- Upload advice type strings -->
+    <string name="advice_title">Advice Type</string>
+    <string name="advice_ins1">Select up to three categories of advice you want to receive. This will us to provide better advice aimed towards your needs.</string>
+    <string name="advice_ins2">Please provide further details on the type of advice you are seeking. Consider your product goals and overall business goals.</string>
+    <string name="advice_file_format">Preferred feedback format:</string>
+    <string name="fmt_pdf">PDF file</string>
+    <string name="fmt_jpeg">JPEG</string>
+    <string name="fmt_png">PNG</string>
+    
+    <!-- Advice type categories -->
+    <string name="adv_skill_dev">Skill Development</string>
+    <string name="adv_pricing">Pricing</string>
+    <string name="adv_sales">Sales</string>
+    <string name="adv_promote">Promoting your Work</string>
+    <string name="adv_product">Turning Work into Product</string>
+    <string name="adv_find_supp">Finding a Supplier</string>
+    <string name="adv_budget">Budgeting</string>
+    <string name="adv_business">Creating your own Business</string>
 
     <!-- Preference Titles -->
     <string name="messages_header">Messages</string>
