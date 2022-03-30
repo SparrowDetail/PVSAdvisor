@@ -113,6 +113,7 @@
                 android:text="@string/advice_file_format"/>
 
             <RadioGroup
+                android:id="@+id/fmt_selection_radial"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/advice_feedback_fmt"
