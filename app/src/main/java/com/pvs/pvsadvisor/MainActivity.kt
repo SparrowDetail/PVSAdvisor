@@ -19,6 +19,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        //This will vary on user or advisor status
         val status = "user"
         if (status == "user") {
             if (savedInstanceState == null) {
