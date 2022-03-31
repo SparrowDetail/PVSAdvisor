@@ -1,23 +1,32 @@
 <PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android">
-
     <!--Personal Bio Settings-->
     <PreferenceCategory
-        app:title="@string/personalbio_title"
+        app:title="Personal Bio"
         app:icon="@drawable/ic_baseline_person_24">
 
         <EditTextPreference
             app:key="userFullName"
-            app:title="@string/name_title"
+            app:title="Full Name"
             app:useSimpleSummaryProvider="true" />
 
-        <ListPreference
-            app:defaultValue="reply"
-            app:entries="@array/reply_entries"
-            app:entryValues="@array/reply_values"
-            app:key="reply"
-            app:title="@string/reply_title"
-            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            app:key="userjobEntitlement"
+            app:title="Job Title"
+            app:useSimpleSummaryProvider="true"
+            />
+
+        <EditTextPreference
+            app:key="userExpertise"
+            app:title="Expertise"
+            app:useSimpleSummaryProvider="true"
+            />
+
+        <EditTextPreference
+            app:key="userPreviousWorksDescription"
+            app:title="Previous Works"
+            app:useSimpleSummaryProvider="true"
+            />
 
     </PreferenceCategory>
 
@@ -27,37 +36,37 @@
         app:icon="@drawable/ic_baseline_link_24">
 
         <SwitchPreferenceCompat
-            app:key="sync"
+            app:key="connectionsVisibility"
             app:summaryOff="@string/showconnections_summary_off"
             app:summaryOn="@string/showconnections_summary_on"
-            app:title="@string/showconnections_title" />
+            app:title="@string/showconnections_settings" />
 
         <SwitchPreferenceCompat
-            app:dependency="sync"
+            app:dependency="connectionSync"
             app:key="attachment"
-            app:summaryOff="@string/showconnections_summary_off"
+            app:summaryOff="@string/linkedin_showsummary_off"
             app:summaryOn="@string/attachment_summary_on"
             app:title="@string/linkedin_title" />
 
         <SwitchPreferenceCompat
-            app:dependency="sync"
+            app:dependency="connectionSync"
             app:key="attachment"
-            app:summaryOff="@string/showconnections_summary_off"
+            app:summaryOff="@string/instagram_showsummary_off"
             app:summaryOn="@string/attachment_summary_on"
             app:title="@string/instagram_title" />
 
         <SwitchPreferenceCompat
-            app:dependency="sync"
+            app:dependency="connectionSync"
             app:key="attachment"
-            app:summaryOff="@string/showconnections_summary_off"
-            app:summaryOn="@string/attachment_summary_on"
+            app:summaryOff="@string/twitter_summary_off"
+            app:summaryOn="@string/twitter_summary_on"
             app:title="@string/twitter_title" />
 
         <SwitchPreferenceCompat
-            app:dependency="sync"
+            app:dependency="connectionSync"
             app:key="attachment"
-            app:summaryOff="@string/showconnections_summary_off"
-            app:summaryOn="@string/attachment_summary_on"
+            app:summaryOff="@string/website_summary_off"
+            app:summaryOn="@string/website_summary_on"
             app:title="@string/website_title" />
 
     </PreferenceCategory>
@@ -74,9 +83,9 @@
             app:defaultValue="50"/>
         <SwitchPreferenceCompat
             android:key="notificationsToggle"
-            app:title="Disable Notifications"
-            android:summaryOff="@string/notificationToggle_summary_on"
-            android:summaryOn="@string/notificationToggle_summary_off"/>
+            android:summaryOff="@string/notifications_summary_off"
+            android:summaryOn="@string/notifications_summary_on"
+            app:title="Disable Notifications" />
 
     </PreferenceCategory>
 
@@ -85,9 +94,10 @@
         app:title="@string/security_title"
         app:icon="@drawable/ic_baseline_security_24">
 
-        <SwitchPreferenceCompat
-            app:key="sync"
-            app:title="@string/sync_title" />
+        <EditTextPreference
+            app:key="userPassword"
+            app:title="Password"
+            />
 
         <SwitchPreferenceCompat
             app:dependency="sync"

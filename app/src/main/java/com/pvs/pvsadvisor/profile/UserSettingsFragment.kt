@@ -8,7 +8,7 @@ import androidx.fragment.app.DialogFragment
 import androidx.fragment.app.Fragment
 import com.pvs.pvsadvisor.R
 
-public class UserSettingsFragment : Fragment(R.layout.dialogfragment_profilesettings) {
+public class UserSettingsFragment : Fragment() {
 //    override fun onCreateView(
 //        inflater: LayoutInflater,
 //        container: ViewGroup?,

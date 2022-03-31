@@ -1,39 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
-    <!--Fragment activity file will sync with profile information on database -->
-    <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/profileHeader"
-        android:name="com.pvs.pvsadvisor.UserHomeProfileHeaderFragment"
-        android:layout_width="wrap_content"
-        android:layout_height="64dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginStart="48dp"
-        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical">
+        <!--Fragment activity file will sync with profile information on database -->
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/profileHeader"
+            android:name="com.pvs.pvsadvisor.UserHomeProfileHeaderFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="64dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginStart="48dp"
+            />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/projectUploadButton"
-        android:layout_width="316dp"
-        android:layout_height="122dp"
-        android:text="@string/project_upload_button"
-        android:textColor="@color/white"
-        android:background="@drawable/upload_home_button_1"
-        style ="@style/user_home_button"
-        />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/projectUploadButton"
+            android:layout_width="316dp"
+            android:layout_height="122dp"
+            android:text="@string/project_upload_button"
+            android:textColor="@color/white"
+            android:background="@drawable/upload_home_button_1"
+            style ="@style/user_home_button"
+            />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/projectEditButton"
-        android:layout_width="316dp"
-        android:layout_height="122dp"
-        android:text="@string/project_edit_button"
-        android:textColor="@color/black"
-        android:background="@drawable/upload_home_button_2"
-        style ="@style/user_home_button"
-        />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/projectEditButton"
+            android:layout_width="316dp"
+            android:layout_height="122dp"
+            android:text="@string/project_edit_button"
+            android:textColor="@color/black"
+            android:background="@drawable/upload_home_button_2"
+            style ="@style/user_home_button"
+            />
+    </LinearLayout>
 
-
-
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
