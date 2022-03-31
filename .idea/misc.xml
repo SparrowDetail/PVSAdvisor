@@ -3,6 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Chees/StudioProjects/PVSAdvisor/app/src/main/res/layout/activity_main.xml" value="0.2695035460992908" />
+        <entry key="..\:/Users/Chees/StudioProjects/PVSAdvisor/app/src/main/res/layout/fragment_main_user.xml" value="0.2695035460992908" />
+        <entry key="..\:/Users/Chees/StudioProjects/PVSAdvisor/app/src/main/res/layout/user_home.xml" value="0.322463768115942" />
+        <entry key="..\:/Users/Chees/StudioProjects/PVSAdvisor/app/src/main/res/menu/bottom_menu.xml" value="0.2898148148148148" />
+        <entry key="..\:/Users/Chees/StudioProjects/PVSAdvisor/app/src/main/res/xml/root_preferences.xml" value="0.33" />
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.143" />
         <entry key="app/src/main/res/drawable/activity_profilepage.xml" value="0.12" />
         <entry key="app/src/main/res/drawable/ic_baseline_menu_24.xml" value="0.242" />

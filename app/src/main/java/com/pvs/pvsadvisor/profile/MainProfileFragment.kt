@@ -16,8 +16,6 @@ class MainProfileFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         return inflater.inflate(R.layout.fragment_main_user, container, false)
-
-//        setupActionBarWithNavController(findNavController(R.id.))
     }
 
 

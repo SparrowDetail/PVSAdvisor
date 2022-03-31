@@ -6,6 +6,8 @@ import android.view.Menu
 import android.view.MenuItem
 import androidx.fragment.app.commit
 import androidx.fragment.app.replace
+import androidx.navigation.findNavController
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 /*
  * Main function for Prime Vice Advisor.
@@ -26,6 +28,10 @@ class MainActivity : AppCompatActivity() {
                 }
             }
         }
+
+        //Bottom menu navigation.
+//        val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
+//        val navController = findNavController(R.id.main_act_user_ui_frag_container)
     }
 
     //Inflates the custom menu from menu asset

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <!--Fragment that displays user information on upload home page-->
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -12,43 +12,44 @@
 
     <!-- TODO: Create Default Profile Image -->
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#fff"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/bottom_menu" />
+
+    <!-- TODO:Add generic text styles to use universally -->
 
     <View
         android:id="@+id/profileImageSmall"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        />
-
-    <!-- TODO:Add generic text styles to use universally -->
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="522dp"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
         android:orientation="vertical"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="5dp">
+        app:layout_constraintStart_toEndOf="@+id/profileImageSmall"
+        app:layout_constraintTop_toTopOf="parent">
+
         <TextView
             android:id="@+id/upload_home_welcome"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/profile_fragment_welcome"
-            />
+            android:text="@string/profile_fragment_welcome" />
+
         <TextView
             android:id="@+id/user_home_profile_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:text="place holder"
-            />
+            android:text="place holder" />
 
     </LinearLayout>
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

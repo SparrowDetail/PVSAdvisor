@@ -171,4 +171,25 @@
         "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
         "when a user tries to pick up one of cards.\n\n"
     </string>
+    <string name="showconnections_summary_off">No connections are displayed on your profile.</string>
+    <string name="showconnections_summary_on">Connection(s) are being displayed on your profile.</string>
+    <string name="linkedin_showsummary_off">Your LinkedIn is not being shown.</string>
+    <string name="linkedin_showsummary_on">Your LinkedIn is being displayed.</string>
+    <string name="linkedin_title">LinkedIn</string>
+    <string name="instagram_title">Instagram</string>
+    <string name="twitter_title">Twitter</string>
+    <string name="website_title">Website</string>
+    <string name="notifications_title">Notifications</string>
+    <string name="security_title">Security</string>
+    <string name="notificationToggle_summary_on">All notifications for PVS Advisor are enabled.</string>
+    <string name="notificationToggle_summary_off">All PVS Advisor notifications are disabled.</string>
+    <string name="instagram_showsummary_off">Your Instagram isn\'t being displayed.</string>
+    <string name="twitter_summary_off">Your Twitter is not being shown.</string>
+    <string name="twitter_summary_on">Your Twitter is being shown.</string>
+    <string name="webstie_summary_off">Your website is not being shown.</string>
+    <string name="website_summary_off">Your website is not being shown.</string>
+    <string name="website_summary_on">Your website is being shown.</string>
+    <string name="notifications_summary_off">All PVS Advisor notifications are enabled.</string>
+    <string name="notifications_summary_on">All PVS Advisor notifications are disabled.</string>
+    <string name="showconnections_settings">Display Connections on Profile</string>
 </resources>
