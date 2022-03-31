@@ -4,11 +4,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
-import androidx.fragment.app.Fragment
 import androidx.fragment.app.commit
 import androidx.fragment.app.replace
-import com.pvs.pvsadvisor.upload.UploadCategoryFragment
-import com.pvs.pvsadvisor.upload.UploadTitleCollectionFragment
 
 /*
  * Main function for Prime Vice Advisor.
@@ -24,7 +21,7 @@ class MainActivity : AppCompatActivity() {
         if (status == "user") {
             if (savedInstanceState == null) {
                 supportFragmentManager.commit {
-                    replace<UserHomeMain>(R.id.main_act_user_ui_frag_container)
+                    replace<UserHomeMainFragment>(R.id.main_act_user_ui_frag_container)
                     setReorderingAllowed(true)
                 }
             }

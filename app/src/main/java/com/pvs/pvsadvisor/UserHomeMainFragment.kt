@@ -12,7 +12,7 @@ import com.pvs.pvsadvisor.upload.UploadMain
  * Main function for Prime Vice Advisor.
  * Developed by Amar, Steven, and Jacob.
  */
-class UserHomeMain : Fragment(R.layout.user_home) {
+class UserHomeMainFragment : Fragment(R.layout.user_home) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 

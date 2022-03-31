@@ -26,7 +26,7 @@ class Login : AppCompatActivity()
 
         // On-click listener to login and take to user main home
         btn_login.setOnClickListener{
-            val intent = Intent(this, UserHomeMain::class.java)
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
 

@@ -28,7 +28,7 @@ class Signup : AppCompatActivity()
 
         // On-click listener to create a new user and take to user main home
         btn_create.setOnClickListener{
-            val intent = Intent(this, UserHomeMain::class.java)
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
 
