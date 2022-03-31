@@ -47,7 +47,7 @@ class UploadMain : AppCompatActivity() {
             when (uploadStep) {
                 0 -> {
                     supportFragmentManager.commit {
-                        replace<UploadTitleCollectionFragment>(R.id.uploadMainFragmentView)
+                        replace<UploadCategoryFragment>(R.id.uploadMainFragmentView)
                         setReorderingAllowed(true)
                         addToBackStack("category")
                     }

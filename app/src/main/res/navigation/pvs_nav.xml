@@ -8,7 +8,7 @@
         android:id="@+id/landingPage"
         android:name="com.pvs.pvsadvisor.UserHomeProfileHeaderFragment"
         android:label="Home"
-        tools:layout="@layout/user_home" />
+        tools:layout="@layout/user_home_fragment" />
     <fragment
         android:id="@+id/Messaging"
         android:name="com.pvs.pvsadvisor.messaging.Main_Messaging_Fragment"

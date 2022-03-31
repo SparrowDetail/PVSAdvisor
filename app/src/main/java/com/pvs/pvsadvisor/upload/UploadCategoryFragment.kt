@@ -1,14 +1,14 @@
 package com.pvs.pvsadvisor.upload
 
 import android.os.Bundle
+import androidx.fragment.app.Fragment
 import android.view.View
-import android.widget.Button
 import android.widget.CheckBox
 import android.widget.Toast
-import androidx.fragment.app.Fragment
 import com.pvs.pvsadvisor.R
 
-class UploadCategoryFragment: Fragment(R.layout.upload_category_select) {
+
+class UploadCategoryFragment : Fragment(R.layout.fragment_upload_category) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -22,7 +22,7 @@ class UploadCategoryFragment: Fragment(R.layout.upload_category_select) {
         val checkComicBook: CheckBox = view.findViewById(R.id.cat_com_book)
 
         checkCharDesign.setOnClickListener {
-            Toast.makeText(view.context,"Test",Toast.LENGTH_LONG).show()
+            Toast.makeText(view.context,"Test", Toast.LENGTH_LONG).show()
         }
 
         checkStoryboarding.setOnClickListener {

@@ -1,7 +1,6 @@
 package com.pvs.pvsadvisor
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.*
 import android.widget.Button
@@ -12,7 +11,7 @@ import com.pvs.pvsadvisor.upload.UploadMain
  * Main function for Prime Vice Advisor.
  * Developed by Amar, Steven, and Jacob.
  */
-class UserHomeMainFragment : Fragment(R.layout.user_home) {
+class UserHomeMainFragment : Fragment(R.layout.user_home_fragment) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
@@ -20,7 +19,7 @@ class UserHomeMainFragment : Fragment(R.layout.user_home) {
         val newProjectUploadButton = view.findViewById<Button>(R.id.projectUploadButton)
         //On-click listener for new project upload button
         newProjectUploadButton.setOnClickListener {
-            val intent = Intent(view.context,UploadMain::class.java)
+            val intent = Intent(view.context, UploadMain::class.java)
             startActivity(intent)
         }
     }

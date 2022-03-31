@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/upload_nav"
+    app:startDestination="@id/uploadCategoryFragment">
+    <fragment
+        android:id="@+id/uploadCategoryFragment"
+        android:name="com.pvs.pvsadvisor.upload.UploadCategoryFragment"
+        android:label="fragment_upload_category"
+        tools:layout="@layout/fragment_upload_category" >
+        <action
+            android:id="@+id/action_uploadCategoryFragment_to_uploadTitleFragment"
+            app:destination="@id/uploadTitleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/uploadTitleFragment"
+        android:name="com.pvs.pvsadvisor.upload.UploadTitleFragment"
+        android:label="fragment_upload_title"
+        tools:layout="@layout/fragment_upload_title" >
+        <action
+            android:id="@+id/action_uploadTitleFragment_to_uploadProjectFileUploadFragment"
+            app:destination="@id/uploadProjectFileUploadFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/uploadProjectFileUploadFragment"
+        android:name="com.pvs.pvsadvisor.upload.UploadProjectFileUploadFragment"
+        android:label="fragment_upload_project_file_upload"
+        tools:layout="@layout/fragment_upload_project_file_upload" >
+        <action
+            android:id="@+id/action_uploadProjectFileUploadFragment_to_uploadAdviceTypeFragment"
+            app:destination="@id/uploadAdviceTypeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/uploadAdviceTypeFragment"
+        android:name="com.pvs.pvsadvisor.upload.UploadAdviceTypeFragment"
+        android:label="fragment_upload_advice_type"
+        tools:layout="@layout/fragment_upload_advice_type" />
+</navigation>

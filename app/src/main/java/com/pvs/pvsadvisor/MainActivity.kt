@@ -6,8 +6,6 @@ import android.view.Menu
 import android.view.MenuItem
 import androidx.fragment.app.commit
 import androidx.fragment.app.replace
-import androidx.navigation.findNavController
-import com.google.android.material.bottomnavigation.BottomNavigationView
 
 /*
  * Main function for Prime Vice Advisor.
