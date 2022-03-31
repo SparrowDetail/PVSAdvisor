@@ -9,7 +9,6 @@ import androidx.fragment.app.add
 import androidx.fragment.app.commit
 import androidx.fragment.app.replace
 import com.pvs.pvsadvisor.R
-import com.pvs.pvsadvisor.databinding.UploadCategorySelectBinding
 import java.util.*
 
 /**
@@ -28,7 +27,7 @@ class UploadMain : AppCompatActivity() {
         //Implement fragment data
         if (savedInstanceState == null) {
             supportFragmentManager.commit {
-                replace<UploadCategoryFragment>(R.id.uploadMainFragmentView)
+                replace<UploadCategoryFragment>(R.id.uploadMainFragmentContainerView)
                 setReorderingAllowed(true)
             }
         }
@@ -47,7 +46,7 @@ class UploadMain : AppCompatActivity() {
             when (uploadStep) {
                 0 -> {
                     supportFragmentManager.commit {
-                        replace<UploadCategoryFragment>(R.id.uploadMainFragmentView)
+                        replace<UploadCategoryFragment>(R.id.uploadMainFragmentContainerView)
                         setReorderingAllowed(true)
                         addToBackStack("category")
                     }
