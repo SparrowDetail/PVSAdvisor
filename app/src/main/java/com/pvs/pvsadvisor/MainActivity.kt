@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         if (status == "user") {
             if (savedInstanceState == null) {
                 supportFragmentManager.commit {
-                    replace<UserHomeMain>(R.id.main_act_user_ui)
+                    replace<UserHomeMain>(R.id.main_act_user_ui_frag_container)
                     setReorderingAllowed(true)
                 }
             }
