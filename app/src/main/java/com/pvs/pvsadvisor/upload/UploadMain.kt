@@ -46,13 +46,15 @@ class UploadMain : AppCompatActivity() {
             //TODO: Set view data to Database
             when (uploadStep) {
                 0 -> {
-
                     supportFragmentManager.commit {
                         replace<UploadTitleCollectionFragment>(R.id.uploadMainFragmentView)
                         setReorderingAllowed(true)
                         addToBackStack("category")
                     }
                     uploadStep += 1
+                }
+                1 -> {
+
                 }
                 else -> {}
             }
