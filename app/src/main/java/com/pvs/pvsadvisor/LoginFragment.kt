@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 
 /*
@@ -26,6 +27,8 @@ class LoginFragment : Fragment(R.layout.activity_login)
 
         // On-click listener to login and take to user main home
         btn_login.setOnClickListener{
+            Toast.makeText(view.context,"Login successful",Toast.LENGTH_SHORT).show()
+
             val intent = Intent(view.context, MainActivity::class.java)
             startActivity(intent)
         }
