@@ -21,19 +21,5 @@ class UploadMain : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         //TODO: Implement content view progress in DB
         setContentView(R.layout.upload_main_activity)
-
-        //For saved project, pull upload step from database
-        var uploadStep:Int = 0
-
-        //Implement fragment data
- //       if (savedInstanceState == null) {
- //           supportFragmentManager.commit {
- //               replace<UploadCategoryFragment>(R.id.uploadMainFragmentContainerView)
- //               setReorderingAllowed(true)
- //           }
- //       }
     }
-
-
-
 }

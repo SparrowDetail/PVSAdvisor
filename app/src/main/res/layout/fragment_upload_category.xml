@@ -19,7 +19,7 @@
         style="@style/upload_instruction"/>
 
     <RadioGroup
-        android:id="@+id/cat_select_radial"
+        android:id="@+id/cat_select_radio"
         android:layout_width="360dp"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -32,7 +32,7 @@
             android:layout_height="wrap_content"
             android:text="@string/select_character_design"
             android:id="@+id/cat_char_design"
-            style="@style/category_selection_text"/>
+            style="@style/category_selection_text" />
         <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
