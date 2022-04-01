@@ -12,10 +12,11 @@ import com.pvs.pvsadvisor.R
 
 
 class UploadCategoryFragment : Fragment(R.layout.fragment_upload_category) {
+    private var boxesChecked: Int = 0
+    private var selectedCategories: String = ""
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        var numberChecked = 0
 
         val checkboxCarDesign = view.findViewById<CheckBox>(R.id.cat_char_design)
         val checkboxStoryboarding = view.findViewById<CheckBox>(R.id.cat_storyboarding)
@@ -42,10 +43,16 @@ class UploadCategoryFragment : Fragment(R.layout.fragment_upload_category) {
 
         when (checkbox.id) {
             R.id.cat_char_design -> {
-                if (checkbox.isChecked)
-                    Toast.makeText(view.context,"Checked", Toast.LENGTH_LONG).show()
-                else
+                if (checkbox.isChecked) {
+                    Toast.makeText(view.context, "Checked", Toast.LENGTH_LONG).show()
+                    selectedCategories += "Category,"
+                    boxesChecked -= 1
+                }
+                else {
                     Toast.makeText(view.context,"Not Checked", Toast.LENGTH_LONG).show()
+
+                    boxesChecked -= 1
+                }
             }
         }
     }
