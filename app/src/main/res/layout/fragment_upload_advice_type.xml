@@ -5,7 +5,9 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_above="@id/save_next_layout_adv"
+        android:layout_marginBottom="10dp">
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -141,7 +143,29 @@
                     style="@style/category_selection_text"/>
             </RadioGroup>
         </RelativeLayout>
-
     </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/save_next_layout_adv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/nextSaveLayout">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/uploadSaveButton_adv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/upload_save_button"
+            style="@style/uploadSaveStyle"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/uploadNextButton_adv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/upload_next_button"
+            style="@style/uploadNextStyle"
+            />
+    </LinearLayout>
 
 </RelativeLayout>

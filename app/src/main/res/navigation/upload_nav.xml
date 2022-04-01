@@ -10,7 +10,7 @@
         android:label="fragment_upload_category"
         tools:layout="@layout/fragment_upload_category" >
         <action
-            android:id="@+id/action_uploadCategoryFragment_to_uploadTitleFragment"
+            android:id="@+id/navigate_to_title_selection"
             app:destination="@id/uploadTitleFragment" />
     </fragment>
     <fragment
@@ -19,7 +19,7 @@
         android:label="fragment_upload_title"
         tools:layout="@layout/fragment_upload_title" >
         <action
-            android:id="@+id/action_uploadTitleFragment_to_uploadProjectFileUploadFragment"
+            android:id="@+id/navigate_to_file_upload"
             app:destination="@id/uploadProjectFileUploadFragment" />
     </fragment>
     <fragment
@@ -28,7 +28,7 @@
         android:label="fragment_upload_project_file_upload"
         tools:layout="@layout/fragment_upload_project_file_upload" >
         <action
-            android:id="@+id/action_uploadProjectFileUploadFragment_to_uploadAdviceTypeFragment"
+            android:id="@+id/navigate_to_advice_detail"
             app:destination="@id/uploadAdviceTypeFragment" />
     </fragment>
     <fragment

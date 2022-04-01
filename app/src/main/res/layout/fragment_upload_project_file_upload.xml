@@ -85,11 +85,34 @@
         android:id="@+id/file_upload_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:background="@drawable/file_upload_button"
+        android:layout_above="@id/save_next_layout_prj_file"
         android:text="@string/file_upload_button"
         android:textSize="36sp"
-        android:layout_marginBottom="86dp"
+        android:layout_marginBottom="20dp"
         android:elevation="4dp" />
+
+    <LinearLayout
+        android:id="@+id/save_next_layout_prj_file"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/nextSaveLayout">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/uploadSaveButton_prj_file"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/upload_save_button"
+            style="@style/uploadSaveStyle"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/uploadNextButton_prj_file"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/upload_next_button"
+            style="@style/uploadNextStyle"
+            />
+    </LinearLayout>
 </RelativeLayout>

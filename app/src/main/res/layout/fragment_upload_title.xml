@@ -28,4 +28,27 @@
         android:layout_marginTop="30dp"
         />
 
+    <LinearLayout
+        android:id="@+id/save_next_layout_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/nextSaveLayout">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/uploadSaveButton_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/upload_save_button"
+            style="@style/uploadSaveStyle"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/uploadNextButton_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/upload_next_button"
+            style="@style/uploadNextStyle"
+            />
+    </LinearLayout>
+
 </RelativeLayout>

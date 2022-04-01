@@ -9,33 +9,7 @@
         android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@id/save_next_layout"
         app:defaultNavHost="true"
         app:navGraph="@navigation/upload_nav" />
-
-    <LinearLayout
-        android:id="@+id/save_next_layout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        style="@style/nextSaveLayout">
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/uploadSaveButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/upload_save_button"
-            style="@style/uploadSaveStyle"
-            />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/uploadNextButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/upload_next_button"
-            style="@style/uploadNextStyle"
-            />
-    </LinearLayout>
-
-
 
 </RelativeLayout>

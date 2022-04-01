@@ -55,5 +55,28 @@
 
     </RadioGroup>
 
+    <LinearLayout
+        android:id="@+id/save_next_layout_cat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/nextSaveLayout">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/uploadSaveButton_cat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/upload_save_button"
+            style="@style/uploadSaveStyle"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/uploadNextButton_cat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/upload_next_button"
+            style="@style/uploadNextStyle"
+            />
+    </LinearLayout>
+
 
 </RelativeLayout>

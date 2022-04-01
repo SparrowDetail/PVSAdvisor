@@ -12,6 +12,7 @@ import com.pvs.pvsadvisor.upload.UploadMain
  * Developed by Amar, Steven, and Jacob.
  */
 class UserHomeMainFragment : Fragment(R.layout.user_home_fragment) {
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 

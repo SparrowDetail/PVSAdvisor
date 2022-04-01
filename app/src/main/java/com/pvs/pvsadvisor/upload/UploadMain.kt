@@ -8,6 +8,7 @@ import android.widget.Toast
 import androidx.fragment.app.add
 import androidx.fragment.app.commit
 import androidx.fragment.app.replace
+import androidx.navigation.Navigation
 import com.pvs.pvsadvisor.R
 import java.util.*
 
@@ -25,39 +26,12 @@ class UploadMain : AppCompatActivity() {
         var uploadStep:Int = 0
 
         //Implement fragment data
-        if (savedInstanceState == null) {
-            supportFragmentManager.commit {
-                replace<UploadCategoryFragment>(R.id.uploadMainFragmentContainerView)
-                setReorderingAllowed(true)
-            }
-        }
-
-        //Activity save button
-        val fragSaveButton = findViewById<Button>(R.id.uploadSaveButton)
-        fragSaveButton.setOnClickListener {
-            //TODO: Save project data to Database
-            finish()
-        }
-
-        //Activity next button
-        val fragNextButton = findViewById<Button>(R.id.uploadNextButton)
-        fragNextButton.setOnClickListener {
-            //TODO: Set view data to Database
-            when (uploadStep) {
-                0 -> {
-                    supportFragmentManager.commit {
-                        replace<UploadCategoryFragment>(R.id.uploadMainFragmentContainerView)
-                        setReorderingAllowed(true)
-                        addToBackStack("category")
-                    }
-                    uploadStep += 1
-                }
-                1 -> {
-
-                }
-                else -> {}
-            }
-        }
+ //       if (savedInstanceState == null) {
+ //           supportFragmentManager.commit {
+ //               replace<UploadCategoryFragment>(R.id.uploadMainFragmentContainerView)
+ //               setReorderingAllowed(true)
+ //           }
+ //       }
     }
 
 
