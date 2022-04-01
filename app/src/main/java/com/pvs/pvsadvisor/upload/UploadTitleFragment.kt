@@ -17,5 +17,9 @@ class UploadTitleFragment : Fragment(R.layout.fragment_upload_title) {
         nextBtn.setOnClickListener {
             Navigation.findNavController(view).navigate(R.id.navigate_to_file_upload)
         }
+        saveBtn.setOnClickListener {
+            //TODO: Save activity data
+            activity?.finish()
+        }
     }
 }

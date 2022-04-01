@@ -17,5 +17,9 @@ class UploadProjectFileUploadFragment : Fragment(R.layout.fragment_upload_projec
         nextBtn.setOnClickListener {
             Navigation.findNavController(view).navigate(R.id.navigate_to_advice_detail)
         }
+        saveBtn.setOnClickListener {
+            //TODO: Save activity data
+            activity?.finish()
+        }
     }
 }

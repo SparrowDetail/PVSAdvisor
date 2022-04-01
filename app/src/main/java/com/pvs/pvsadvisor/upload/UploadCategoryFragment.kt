@@ -37,6 +37,10 @@ class UploadCategoryFragment : Fragment(R.layout.fragment_upload_category) {
         nextBtn.setOnClickListener {
             Navigation.findNavController(view).navigate(R.id.navigate_to_title_selection)
         }
+        saveBtn.setOnClickListener {
+            //TODO: Save activity data
+            activity?.finish()
+        }
 
 
     }

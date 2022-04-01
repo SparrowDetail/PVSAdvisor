@@ -14,5 +14,10 @@ class UploadAdviceTypeFragment : Fragment(R.layout.fragment_upload_advice_type) 
 
         val nextBtn = view.findViewById<Button>(R.id.uploadNextButton_adv)
         val saveBtn = view.findViewById<Button>(R.id.uploadSaveButton_adv)
+        saveBtn.setOnClickListener {
+            //TODO: Save activity data
+            activity?.finish()
+        }
     }
+
 }
