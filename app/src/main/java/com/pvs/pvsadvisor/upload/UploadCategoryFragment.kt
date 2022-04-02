@@ -15,14 +15,19 @@ class UploadCategoryFragment : Fragment(R.layout.fragment_upload_category) {
     private var boxesChecked: Int = 0
     private var selectedCategories: ArrayList<String> = ArrayList(3)
 
+    /*
+    * Override onViewCreated to initialize fragment core functions
+    * */
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        //Declare Category CheckBox Objects
         val checkboxCarDesign = view.findViewById<CheckBox>(R.id.cat_char_design)
         val checkboxStoryboarding = view.findViewById<CheckBox>(R.id.cat_storyboarding)
         val checkboxSeqArt = view.findViewById<CheckBox>(R.id.cat_seq_art)
         val checkboxComBook = view.findViewById<CheckBox>(R.id.cat_com_book)
 
+        //Set Category CheckBox onClickListeners
         checkboxCarDesign.setOnClickListener {
             onCheckboxClicked(view, checkboxCarDesign)
         }
@@ -36,8 +41,11 @@ class UploadCategoryFragment : Fragment(R.layout.fragment_upload_category) {
             onCheckboxClicked(view, checkboxComBook)
         }
 
+        //Declare next and save button objects
         val nextBtn = view.findViewById<Button>(R.id.uploadNextButton_cat)
         val saveBtn = view.findViewById<Button>(R.id.uploadSaveButton_cat)
+
+        //Next button on click listener
         nextBtn.setOnClickListener {
             //TODO:Replace display sample data with database storage
             Toast.makeText(view.context, selectedCategories.toString(), Toast.LENGTH_LONG).show()
@@ -49,12 +57,18 @@ class UploadCategoryFragment : Fragment(R.layout.fragment_upload_category) {
             else
                 Toast.makeText(view.context,getString(R.string.category_more_options),Toast.LENGTH_SHORT).show()
         }
+
+        //Save button on click listener
         saveBtn.setOnClickListener {
             //TODO: Save activity data
             activity?.finish()
         }
     }
 
+    /*
+    * onCheckboxClicked accepts the current view and checkbox being called and
+    * constructs the current input dataset in the selectedCategories ArrayList
+    * */
     private fun onCheckboxClicked (view: View, checkbox: CheckBox) {
         if (boxesChecked < 3 || !checkbox.isChecked) {
             when (checkbox.id) {
