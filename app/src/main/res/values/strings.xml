@@ -18,6 +18,7 @@
     <string name="category_selection_limit_reached">You may only select up to 3 categories</string>
     <string name="title_collection_title">Title Your Project</string>
     <string name="title_collection_instruction">Give your project a descriptive name</string>
+    <string name="title_required_text">You must enter a title</string>
     <string name="file_upload_title">Upload Your Project Files</string>
     <string name="file_upload_instruction">To ensure the safety and integrity of your original artwork, please:</string>
     <string name="file_upload_ins1">Add a unique water mark to all files you submit</string>
