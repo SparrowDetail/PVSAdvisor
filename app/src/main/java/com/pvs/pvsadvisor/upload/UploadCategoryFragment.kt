@@ -13,7 +13,7 @@ import com.pvs.pvsadvisor.R
 
 class UploadCategoryFragment : Fragment(R.layout.fragment_upload_category) {
     private var boxesChecked: Int = 0
-    private var selectedCategories: String = ""
+    private var selectedCategories: ArrayList<String> = ArrayList(3)
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -26,11 +26,24 @@ class UploadCategoryFragment : Fragment(R.layout.fragment_upload_category) {
         checkboxCarDesign.setOnClickListener {
             onCheckboxClicked(view, checkboxCarDesign)
         }
+        checkboxStoryboarding.setOnClickListener {
+            onCheckboxClicked(view, checkboxStoryboarding)
+        }
+        checkboxSeqArt.setOnClickListener {
+            onCheckboxClicked(view, checkboxSeqArt)
+        }
+        checkboxComBook.setOnClickListener {
+            onCheckboxClicked(view, checkboxComBook)
+        }
 
         val nextBtn = view.findViewById<Button>(R.id.uploadNextButton_cat)
         val saveBtn = view.findViewById<Button>(R.id.uploadSaveButton_cat)
         nextBtn.setOnClickListener {
+            //TODO:Replace display sample data with database storage
+            Toast.makeText(view.context, selectedCategories.toString(), Toast.LENGTH_LONG).show()
+
             //Requires the user to select at least one category
+
             if (boxesChecked > 0)
                 Navigation.findNavController(view).navigate(R.id.navigate_to_title_selection)
             else
@@ -43,50 +56,50 @@ class UploadCategoryFragment : Fragment(R.layout.fragment_upload_category) {
     }
 
     private fun onCheckboxClicked (view: View, checkbox: CheckBox) {
-
-
-        when (checkbox.id) {
-            R.id.cat_char_design -> {
-                if (checkbox.isChecked) {
-                    Toast.makeText(view.context, selectedCategories, Toast.LENGTH_LONG).show()
-                    selectedCategories += "Character Design,"
-                    boxesChecked += 1
-                } else {
-                    Toast.makeText(view.context, "Not Category", Toast.LENGTH_LONG).show()
-                    selectedCategories.replace("Character Design,", "")
-                    boxesChecked -= 1
+        if (boxesChecked < 3 || !checkbox.isChecked) {
+            when (checkbox.id) {
+                R.id.cat_char_design -> {
+                    if (checkbox.isChecked) {
+                        selectedCategories.add(getString(R.string.select_character_design))
+                        boxesChecked += 1
+                    } else {
+                        selectedCategories.remove(getString(R.string.select_character_design))
+                        boxesChecked -= 1
+                    }
                 }
-            }
-            R.id.cat_storyboarding -> {
-                if (checkbox.isChecked) {
-                    selectedCategories += "Storyboarding,"
-                    boxesChecked += 1
-                } else {
-                    selectedCategories.replace("Storyboarding,", "")
-                    boxesChecked -= 1
+                R.id.cat_storyboarding -> {
+                    if (checkbox.isChecked) {
+                        selectedCategories.add(getString(R.string.select_storyboarding))
+                        boxesChecked += 1
+                    } else {
+                        selectedCategories.remove(getString(R.string.select_storyboarding))
+                        boxesChecked -= 1
+                    }
                 }
-            }
-            R.id.cat_seq_art -> {
-                if (checkbox.isChecked) {
-                    selectedCategories += "Sequential Art,"
-                    boxesChecked += 1
-                } else {
-                    selectedCategories.replace("Sequential Art,", "")
-                    boxesChecked -= 1
+                R.id.cat_seq_art -> {
+                    if (checkbox.isChecked) {
+                        selectedCategories.add(getString(R.string.select_sequential_art))
+                        boxesChecked += 1
+                    } else {
+                        selectedCategories.remove(getString(R.string.select_sequential_art))
+                        boxesChecked -= 1
+                    }
                 }
-            }
-            R.id.cat_com_book -> {
-                if (checkbox.isChecked) {
-                    selectedCategories += "Comic Book,"
-                    boxesChecked += 1
-                } else {
-                    selectedCategories.replace("Sequential Art,", "")
-                    boxesChecked -= 1
+                R.id.cat_com_book -> {
+                    if (checkbox.isChecked) {
+                        selectedCategories.add(getString(R.string.select_comic_book))
+                        boxesChecked += 1
+                    } else {
+                        selectedCategories.remove(getString(R.string.select_comic_book))
+                        boxesChecked -= 1
+                    }
                 }
             }
         }
-
-
+        else {
+            checkbox.toggle()
+            Toast.makeText(view.context, getString(R.string.category_selection_limit_reached), Toast.LENGTH_SHORT).show()
+        }
     }
 
     override fun onDestroy() {
