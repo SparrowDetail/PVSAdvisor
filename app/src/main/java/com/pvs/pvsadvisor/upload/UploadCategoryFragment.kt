@@ -48,12 +48,13 @@ class UploadCategoryFragment : Fragment(R.layout.fragment_upload_category) {
         //Next button on click listener
         nextBtn.setOnClickListener {
             //TODO:Replace display sample data with database storage
-            Toast.makeText(view.context, selectedCategories.toString(), Toast.LENGTH_LONG).show()
 
             //Requires the user to select at least one category
 
-            if (boxesChecked > 0)
+            if (boxesChecked > 0) {
+                Toast.makeText(view.context, selectedCategories.toString(), Toast.LENGTH_LONG).show()
                 Navigation.findNavController(view).navigate(R.id.navigate_to_title_selection)
+            }
             else
                 Toast.makeText(view.context,getString(R.string.category_more_options),Toast.LENGTH_SHORT).show()
         }
