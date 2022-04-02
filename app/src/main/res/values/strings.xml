@@ -35,7 +35,7 @@
     <string name="select_comic_book">Comic Book</string>
 
     <!-- Upload advice type strings -->
-    <string name="advice_title">Advice Type</string>
+    <string name="advice_title">Advice Details</string>
     <string name="advice_ins1">Select up to three categories of advice you want to receive. This will us to provide better advice aimed towards your needs.</string>
     <string name="advice_ins2">Please provide further details on the type of advice you are seeking. Consider your product goals and overall business goals.</string>
     <string name="advice_file_format">Preferred feedback format:</string>
