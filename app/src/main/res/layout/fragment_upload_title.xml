@@ -24,9 +24,13 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/titlePage_ins"
         android:layout_centerInParent="true"
-        android:background="@drawable/upload_title_box"
         android:layout_marginTop="30dp"
-        />
+        android:background="@drawable/upload_title_box"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:inputType="text"
+        android:maxLength="32"
+        android:maxLines="1" />
 
     <LinearLayout
         android:id="@+id/save_next_layout_title"

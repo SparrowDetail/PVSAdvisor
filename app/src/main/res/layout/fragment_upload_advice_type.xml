@@ -101,6 +101,12 @@
                 android:layout_below="@id/advice_ins2"
                 android:layout_marginTop="10dp"
                 android:layout_centerHorizontal="true"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:paddingTop="10dp"
+                android:gravity="top"
+                android:maxLength="760"
+                android:inputType="textMultiLine"
                 android:background="@drawable/advice_detail_edit_text"
                 />
 
