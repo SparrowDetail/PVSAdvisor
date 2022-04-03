@@ -20,14 +20,15 @@
 
     <EditText
         android:id="@+id/title_edit_text"
+        android:hint="@string/title_edittext_hint_text"
         android:layout_width="337dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/titlePage_ins"
         android:layout_centerInParent="true"
         android:layout_marginTop="30dp"
         android:background="@drawable/upload_title_box"
-        android:paddingStart="5dp"
-        android:paddingEnd="5dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
         android:inputType="text"
         android:maxLength="32"
         android:maxLines="1" />

@@ -21,5 +21,7 @@ class UploadMain : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         //TODO: Implement content view progress in DB
         setContentView(R.layout.upload_main_activity)
+
+
     }
 }

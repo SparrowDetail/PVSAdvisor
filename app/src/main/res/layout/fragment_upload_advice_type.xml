@@ -95,7 +95,7 @@
 
             <EditText
                 android:id="@+id/advice_det_edit_text"
-                android:text="Fill"
+                android:hint="@string/advice_details_hint_text"
                 android:layout_width="335dp"
                 android:layout_height="270dp"
                 android:layout_below="@id/advice_ins2"
@@ -134,6 +134,7 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/fmt_pdf"
                     android:text="@string/fmt_pdf"
+                    android:checked="true"
                     style="@style/category_selection_text"/>
                 <RadioButton
                     android:layout_width="wrap_content"

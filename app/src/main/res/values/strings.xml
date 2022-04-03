@@ -18,6 +18,7 @@
     <string name="category_selection_limit_reached">You may only select up to 3 categories</string>
     <string name="title_collection_title">Title Your Project</string>
     <string name="title_collection_instruction">Give your project a descriptive name</string>
+    <string name="title_edittext_hint_text">Enter your title here</string>
     <string name="title_required_text">You must enter a title</string>
     <string name="file_upload_title">Upload Your Project Files</string>
     <string name="file_upload_instruction">To ensure the safety and integrity of your original artwork, please:</string>
@@ -38,10 +39,14 @@
     <string name="advice_title">Advice Details</string>
     <string name="advice_ins1">Select up to three categories of advice you want to receive. This will us to provide better advice aimed towards your needs.</string>
     <string name="advice_ins2">Please provide further details on the type of advice you are seeking. Consider your product goals and overall business goals.</string>
+    <string name="advice_details_hint_text">Advice details</string>
+    <string name="advice_selection_limit_reached">You may only select up to three categories</string>
     <string name="advice_file_format">Preferred feedback format:</string>
     <string name="fmt_pdf">PDF file</string>
     <string name="fmt_jpeg">JPEG</string>
     <string name="fmt_png">PNG</string>
+    <string name="advice_type_required">You must select an advice type</string>
+    <string name="advice_detail_required">You must enter advice details</string>
 
     <!-- Advice type categories -->
     <string name="adv_skill_dev">Skill Development</string>
