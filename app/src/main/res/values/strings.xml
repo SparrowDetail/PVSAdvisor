@@ -42,7 +42,7 @@
     <string name="advice_details_hint_text">Advice details</string>
     <string name="advice_selection_limit_reached">You may only select up to three categories</string>
     <string name="advice_file_format">Preferred feedback format:</string>
-    <string name="fmt_pdf">PDF file</string>
+    <string name="fmt_pdf">PDF</string>
     <string name="fmt_jpeg">JPEG</string>
     <string name="fmt_png">PNG</string>
     <string name="advice_type_required">You must select an advice type</string>

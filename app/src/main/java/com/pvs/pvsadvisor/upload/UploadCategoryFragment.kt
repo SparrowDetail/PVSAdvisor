@@ -5,7 +5,6 @@ import androidx.fragment.app.Fragment
 import android.view.View
 import android.widget.Button
 import android.widget.CheckBox
-import android.widget.RadioGroup
 import android.widget.Toast
 import androidx.navigation.Navigation
 import com.pvs.pvsadvisor.R
