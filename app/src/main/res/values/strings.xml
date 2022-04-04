@@ -29,6 +29,10 @@
     <string name="thumbnail_edit_button">Edit</string>
     <string name="project_review_title">Review</string>
     <string name="project_review_instruction">Review your project before submitting</string>
+    <string name="project_review_categories">Categories</string>
+    <string name="project_review_documents">Documents</string>
+    <string name="project_review_advice_type">Advice Type</string>
+    <string name="project_review_advice_detail">Advice Detail</string>
 
 
     <!-- Upload category selection option strings -->
