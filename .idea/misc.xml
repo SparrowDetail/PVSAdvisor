@@ -20,6 +20,7 @@
         <entry key="app/src/main/res/drawable/rectangle_universalprofile.xml" value="0.242" />
         <entry key="app/src/main/res/drawable/styles_profile.xml" value="0.242" />
         <entry key="app/src/main/res/drawable/thumbnail_edit_button.xml" value="0.199" />
+        <entry key="app/src/main/res/drawable/upload_default_thumbnail.xml" value="0.199" />
         <entry key="app/src/main/res/drawable/upload_home_button_1.xml" value="0.181" />
         <entry key="app/src/main/res/drawable/upload_home_button_2.xml" value="0.2765" />
         <entry key="app/src/main/res/drawable/upload_next_button.xml" value="0.199" />
@@ -35,6 +36,7 @@
         <entry key="app/src/main/res/layout/fragment_upload_advice_type.xml" value="0.2817443351859769" />
         <entry key="app/src/main/res/layout/fragment_upload_category.xml" value="0.2817443351859769" />
         <entry key="app/src/main/res/layout/fragment_upload_project_file_upload.xml" value="0.2817443351859769" />
+        <entry key="app/src/main/res/layout/fragment_upload_review.xml" value="0.2817443351859769" />
         <entry key="app/src/main/res/layout/fragment_upload_title.xml" value="0.2817443351859769" />
         <entry key="app/src/main/res/layout/fragment_user_home_profile_header.xml" value="0.67" />
         <entry key="app/src/main/res/layout/upload_advice_type_select.xml" value="0.2817443351859769" />
@@ -45,7 +47,7 @@
         <entry key="app/src/main/res/layout/upload_project_file_upload.xml" value="0.2817443351859769" />
         <entry key="app/src/main/res/layout/upload_title_collection.xml" value="0.5" />
         <entry key="app/src/main/res/layout/user_home.xml" value="0.5" />
-        <entry key="app/src/main/res/layout/user_home_fragment.xml" value="0.1376932720434601" />
+        <entry key="app/src/main/res/layout/user_home_fragment.xml" value="0.2503457814661134" />
         <entry key="app/src/main/res/menu/bottom_menu.xml" value="0.2817443351859769" />
         <entry key="app/src/main/res/xml/root_preferences.xml" value="0.25" />
       </map>

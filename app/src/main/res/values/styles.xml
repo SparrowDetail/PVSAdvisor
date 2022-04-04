@@ -24,6 +24,13 @@
         <item name="android:layout_centerHorizontal">true</item>
     </style>
 
+    <!-- Upload review section header style -->
+    <style name="upload_review_header">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
     <!-- Used to stylize set of instructions on file_upload page -->
     <style name="file_upload_creative_commons">
         <item name="android:padding">10dp</item>

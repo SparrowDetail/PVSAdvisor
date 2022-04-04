@@ -27,6 +27,8 @@
     <string name="file_upload_ins3">Omit or replace any sensitive information pertaining to you or anyone else</string>
     <string name="file_upload_button">Upload File</string>
     <string name="thumbnail_edit_button">Edit</string>
+    <string name="project_review_title">Review</string>
+    <string name="project_review_instruction">Review your project before submitting</string>
 
 
     <!-- Upload category selection option strings -->

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/review_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/project_review_title"
+                style="@style/upload_title"/>
+
+            <TextView
+                android:id="@+id/review_ins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/review_title"
+                android:text="@string/project_review_instruction"
+                style="@style/upload_instruction"/>
+
+            <ImageView
+                android:id="@+id/thumbnail_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/review_ins"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/upload_default_thumbnail"/>
+
+            <TextView
+                android:id="@+id/project_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:layout_below="@id/thumbnail_image"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/project_title"
+                android:layout_alignStart="@id/thumbnail_image"
+                android:layout_marginTop="10dp"
+                style="@style/upload_review_header"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

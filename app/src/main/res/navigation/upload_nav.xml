@@ -36,4 +36,9 @@
         android:name="com.pvs.pvsadvisor.upload.UploadAdviceTypeFragment"
         android:label="fragment_upload_advice_type"
         tools:layout="@layout/fragment_upload_advice_type" />
+    <fragment
+        android:id="@+id/uploadReviewFragment"
+        android:name="com.pvs.pvsadvisor.UploadReviewFragment"
+        android:label="fragment_upload_review"
+        tools:layout="@layout/fragment_upload_review" />
 </navigation>
