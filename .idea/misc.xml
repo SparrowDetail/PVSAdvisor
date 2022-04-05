@@ -18,6 +18,7 @@
         <entry key="app/src/main/res/drawable/ic_baseline_menu_24.xml" value="0.181" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.12" />
         <entry key="app/src/main/res/drawable/rectangle_universalprofile.xml" value="0.242" />
+        <entry key="app/src/main/res/drawable/rounded_profile_image.xml" value="0.199" />
         <entry key="app/src/main/res/drawable/styles_profile.xml" value="0.242" />
         <entry key="app/src/main/res/drawable/thumbnail_edit_button.xml" value="0.199" />
         <entry key="app/src/main/res/drawable/upload_default_thumbnail.xml" value="0.199" />
@@ -39,6 +40,11 @@
         <entry key="app/src/main/res/layout/fragment_upload_review.xml" value="0.43757725587144625" />
         <entry key="app/src/main/res/layout/fragment_upload_title.xml" value="0.2817443351859769" />
         <entry key="app/src/main/res/layout/fragment_user_home_profile_header.xml" value="0.67" />
+        <entry key="app/src/main/res/layout/fragment_user_settings__connections.xml" value="0.2817443351859769" />
+        <entry key="app/src/main/res/layout/fragment_user_settings__notifications.xml" value="0.2817443351859769" />
+        <entry key="app/src/main/res/layout/fragment_user_settings__personal_bio.xml" value="0.2817443351859769" />
+        <entry key="app/src/main/res/layout/fragment_user_settings__security.xml" value="0.2817443351859769" />
+        <entry key="app/src/main/res/layout/mainfragment_scrolling_messaging.xml" value="0.2817443351859769" />
         <entry key="app/src/main/res/layout/upload_advice_type_select.xml" value="0.2817443351859769" />
         <entry key="app/src/main/res/layout/upload_category_select.xml" value="0.25" />
         <entry key="app/src/main/res/layout/upload_enter_realivant_links.xml" value="0.2817443351859769" />
