@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/upload_nav"
+    app:startDestination="@id/uploadCategoryFragment">
+    <fragment
+        android:id="@+id/uploadCategoryFragment"
+        android:name="com.pvs.pvsadvisor.upload.UploadCategoryFragment"
+        android:label="fragment_upload_category"
+        tools:layout="@layout/fragment_upload_category" >
+        <action
+            android:id="@+id/navigate_to_title_selection"
+            app:destination="@id/uploadTitleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/uploadTitleFragment"
+        android:name="com.pvs.pvsadvisor.upload.UploadTitleFragment"
+        android:label="fragment_upload_title"
+        tools:layout="@layout/fragment_upload_title" >
+        <action
+            android:id="@+id/navigate_to_file_upload"
+            app:destination="@id/uploadProjectFileUploadFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/uploadProjectFileUploadFragment"
+        android:name="com.pvs.pvsadvisor.upload.UploadProjectFileUploadFragment"
+        android:label="fragment_upload_project_file_upload"
+        tools:layout="@layout/fragment_upload_project_file_upload" >
+        <action
+            android:id="@+id/navigate_to_advice_detail"
+            app:destination="@id/uploadAdviceTypeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/uploadAdviceTypeFragment"
+        android:name="com.pvs.pvsadvisor.upload.UploadAdviceTypeFragment"
+        android:label="fragment_upload_advice_type"
+        tools:layout="@layout/fragment_upload_advice_type" />
+    <fragment
+        android:id="@+id/uploadReviewFragment"
+        android:name="com.pvs.pvsadvisor.UploadReviewFragment"
+        android:label="fragment_upload_review"
+        tools:layout="@layout/fragment_upload_review" />
+</navigation>

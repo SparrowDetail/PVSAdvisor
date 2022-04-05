@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/titlePage_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_collection_title"
+        style="@style/upload_title"/>
+
+    <TextView
+        android:id="@+id/titlePage_ins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titlePage_title"
+        android:text="@string/title_collection_instruction"
+        style="@style/upload_instruction"/>
+
+    <EditText
+        android:id="@+id/title_edit_text"
+        android:hint="@string/title_edittext_hint_text"
+        android:layout_width="337dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titlePage_ins"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/upload_title_box"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:inputType="text"
+        android:maxLength="32"
+        android:maxLines="1" />
+
+    <LinearLayout
+        android:id="@+id/save_next_layout_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/nextSaveLayout">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/uploadSaveButton_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/upload_save_button"
+            style="@style/uploadSaveStyle"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/uploadNextButton_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/upload_next_button"
+            style="@style/uploadNextStyle"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pvs_settings_nav"
+    app:startDestination="@id/mainProfileFragment">
+
+    <fragment
+        android:id="@+id/mainProfileFragment"
+        android:name="com.pvs.pvsadvisor.profile.MainProfileFragment"
+        android:label="fragment_main_user"
+        tools:layout="@layout/fragment_main_user" >
+        <action
+            android:id="@+id/action_mainProfileFragment_to_userSettingsFragment"
+            app:destination="@id/userSettingsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userSettingsFragment"
+        android:name="com.pvs.pvsadvisor.profile.UserSettingsFragment"
+        android:label="Settings" >
+        <action
+            android:id="@+id/action_userSettingsFragment_to_mainProfileFragment"
+            app:destination="@id/mainProfileFragment" />
+    </fragment>
+</navigation>

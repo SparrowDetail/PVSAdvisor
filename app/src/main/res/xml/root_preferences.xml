@@ -1,0 +1,111 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--Personal Bio Settings-->
+    <PreferenceCategory
+        app:title="Personal Bio"
+        app:icon="@drawable/ic_baseline_person_24">
+
+        <EditTextPreference
+            app:key="userFullName"
+            app:title="Full Name"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            app:key="userjobEntitlement"
+            app:title="Job Title"
+            app:useSimpleSummaryProvider="true"
+            />
+
+        <EditTextPreference
+            app:key="userExpertise"
+            app:title="Expertise"
+            app:useSimpleSummaryProvider="true"
+            />
+
+        <EditTextPreference
+            app:key="userPreviousWorksDescription"
+            app:title="Previous Works"
+            app:useSimpleSummaryProvider="true"
+            />
+
+    </PreferenceCategory>
+
+    <!--Connection Settings-->
+    <PreferenceCategory
+        app:title="@string/valueConnections"
+        app:icon="@drawable/ic_baseline_link_24">
+
+        <SwitchPreferenceCompat
+            app:key="connectionsVisibility"
+            app:summaryOff="@string/showconnections_summary_off"
+            app:summaryOn="@string/showconnections_summary_on"
+            app:title="@string/showconnections_settings" />
+
+        <SwitchPreferenceCompat
+            app:dependency="connectionSync"
+            app:key="attachment"
+            app:summaryOff="@string/linkedin_showsummary_off"
+            app:summaryOn="@string/attachment_summary_on"
+            app:title="@string/linkedin_title" />
+
+        <SwitchPreferenceCompat
+            app:dependency="connectionSync"
+            app:key="attachment"
+            app:summaryOff="@string/instagram_showsummary_off"
+            app:summaryOn="@string/attachment_summary_on"
+            app:title="@string/instagram_title" />
+
+        <SwitchPreferenceCompat
+            app:dependency="connectionSync"
+            app:key="attachment"
+            app:summaryOff="@string/twitter_summary_off"
+            app:summaryOn="@string/twitter_summary_on"
+            app:title="@string/twitter_title" />
+
+        <SwitchPreferenceCompat
+            app:dependency="connectionSync"
+            app:key="attachment"
+            app:summaryOff="@string/website_summary_off"
+            app:summaryOn="@string/website_summary_on"
+            app:title="@string/website_title" />
+
+    </PreferenceCategory>
+
+    <!--Notification Settings-->
+    <PreferenceCategory
+        app:title="@string/notifications_title"
+        app:icon="@drawable/ic_baseline_notifications_24">
+
+        <SeekBarPreference
+            android:key="volume_notifications"
+            app:title="Volume"
+            app:showSeekBarValue="true"
+            app:defaultValue="50"/>
+        <SwitchPreferenceCompat
+            android:key="notificationsToggle"
+            android:summaryOff="@string/notifications_summary_off"
+            android:summaryOn="@string/notifications_summary_on"
+            app:title="Disable Notifications" />
+
+    </PreferenceCategory>
+
+    <!--Security Settings-->
+    <PreferenceCategory
+        app:title="@string/security_title"
+        app:icon="@drawable/ic_baseline_security_24">
+
+        <EditTextPreference
+            app:key="userPassword"
+            app:title="Password"
+            />
+
+        <SwitchPreferenceCompat
+            app:dependency="sync"
+            app:key="attachment"
+            app:summaryOff="@string/attachment_summary_off"
+            app:summaryOn="@string/attachment_summary_on"
+            app:title="@string/attachment_title" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

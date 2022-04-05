@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/sign_up"
+        android:textAppearance="@style/log_in" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="15dp"
+        android:text="@string/create_a_new_account"
+        android:textAppearance="@style/please_log_" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textView_firstname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_alignStart="@+id/editTextTextFirstName"
+        android:layout_marginBottom="10dp"
+        android:text="@string/first_name"
+        android:textAppearance="@style/please_log_" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/editTextTextFirstName"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textView_firstname"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/edittextbackground"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        tools:ignore="SpeakableTextPresentCheck"
+        android:autofillHints="" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textView_lastname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextTextFirstName"
+        android:layout_alignStart="@+id/editTextTextLastName"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/last_name"
+        android:textAppearance="@style/please_log_" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/editTextTextLastName"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textView_lastname"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/edittextbackground"
+        android:ems="10"
+        android:inputType="text"
+        tools:ignore="SpeakableTextPresentCheck"
+        android:autofillHints="" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textView_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextTextLastName"
+        android:layout_alignStart="@id/editTextTextEmailAddress"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/email"
+        android:textAppearance="@style/please_log_" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textView_email"
+        android:layout_centerHorizontal="true"
+        android:autofillHints=""
+        android:background="@drawable/edittextbackground"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textView_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextTextEmailAddress"
+        android:layout_alignStart="@id/editTextTextPassword"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/password"
+        android:textAppearance="@style/please_log_" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textView_password"
+        android:layout_centerHorizontal="true"
+        android:autofillHints=""
+        android:background="@drawable/edittextbackground"
+        android:ems="10"
+        android:inputType="textPassword"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textView_repeatpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextTextPassword"
+        android:layout_alignStart="@+id/editTextTextRepeatPassword"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/repeat_password"
+        android:textAppearance="@style/please_log_" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/editTextTextRepeatPassword"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textView_repeatpassword"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/edittextbackground"
+        android:ems="10"
+        android:inputType="textPassword"
+        tools:ignore="SpeakableTextPresentCheck"
+        android:importantForAutofill="no" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/b_create"
+        android:layout_width="300dp"
+        android:layout_height="67dp"
+        android:layout_below="@+id/editTextTextRepeatPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/login_buttons"
+        android:text="@string/create_account"
+        android:textAppearance="@style/please_log_"
+        android:textSize="24sp" />
+
+
+
+
+</RelativeLayout>

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">PVSAdvisor</string>
+    <string name="app_name">PVS Advisor</string>
     <string name="title_activity_project_submission">ProjectSubmission</string>
 
     <!--Strings utilized in user_home.xml -->
@@ -7,6 +7,62 @@
     <string name="project_upload_button">Upload a New Project</string>
     <string name="project_edit_button">Edit/Review a Project</string>
     <string name="profile_fragment_welcome">Welcome,</string>
+    <string name="user_home_profile">Profile</string>
+
+    <!--Strings utilized in project upload functionality -->
+    <string name="project_save_button">Save</string>
+    <string name="project_next_button">Next</string>
+    <string name="category_title">Select Category</string>
+    <string name="category_instruction">Which categories best describe your project? (select up to 3)</string>
+    <string name="category_more_options">Must select at least one category</string>
+    <string name="category_selection_limit_reached">You may only select up to 3 categories</string>
+    <string name="title_collection_title">Title Your Project</string>
+    <string name="title_collection_instruction">Give your project a descriptive name</string>
+    <string name="title_edittext_hint_text">Enter your title here</string>
+    <string name="title_required_text">You must enter a title</string>
+    <string name="file_upload_title">Upload Your Project Files</string>
+    <string name="file_upload_instruction">To ensure the safety and integrity of your original artwork, please:</string>
+    <string name="file_upload_ins1">Add a unique water mark to all files you submit</string>
+    <string name="file_upload_ins2">Use files of a lower quality that can not be replicated</string>
+    <string name="file_upload_ins3">Omit or replace any sensitive information pertaining to you or anyone else</string>
+    <string name="file_upload_button">Upload File</string>
+    <string name="thumbnail_edit_button">Edit</string>
+    <string name="project_review_title">Review</string>
+    <string name="project_review_instruction">Review your project before submitting</string>
+    <string name="project_review_categories">Categories</string>
+    <string name="project_review_documents">Documents</string>
+    <string name="project_review_advice_type">Advice Type</string>
+    <string name="project_review_advice_detail">Advice Detail</string>
+
+
+    <!-- Upload category selection option strings -->
+    <string name="select_character_design">Character Design</string>
+    <string name="select_storyboarding">Storyboarding</string>
+    <string name="select_sequential_art">Sequential Art</string>
+    <string name="select_comic_book">Comic Book</string>
+
+    <!-- Upload advice type strings -->
+    <string name="advice_title">Advice Details</string>
+    <string name="advice_ins1">Select up to three categories of advice you want to receive. This will us to provide better advice aimed towards your needs.</string>
+    <string name="advice_ins2">Please provide further details on the type of advice you are seeking. Consider your product goals and overall business goals.</string>
+    <string name="advice_details_hint_text">Advice details</string>
+    <string name="advice_selection_limit_reached">You may only select up to three categories</string>
+    <string name="advice_file_format">Preferred feedback format:</string>
+    <string name="fmt_pdf">PDF</string>
+    <string name="fmt_jpeg">JPEG</string>
+    <string name="fmt_png">PNG</string>
+    <string name="advice_type_required">You must select an advice type</string>
+    <string name="advice_detail_required">You must enter advice details</string>
+
+    <!-- Advice type categories -->
+    <string name="adv_skill_dev">Skill Development</string>
+    <string name="adv_pricing">Pricing</string>
+    <string name="adv_sales">Sales</string>
+    <string name="adv_promote">Promoting your Work</string>
+    <string name="adv_product">Turning Work into Product</string>
+    <string name="adv_find_supp">Finding a Supplier</string>
+    <string name="adv_budget">Budgeting</string>
+    <string name="adv_business">Creating your own Business</string>
 
     <!-- Preference Titles -->
     <string name="messages_header">Messages</string>
@@ -22,4 +78,132 @@
     <string name="attachment_summary_on">Automatically download attachments for incoming emails
     </string>
     <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login">LOGIN</string>
+    <string name="please_login">Please login</string>
+    <string name="email">Email</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="new_user">New User?</string>
+    <string name="password">Password</string>
+    <string name="create_a_new_account">Create a new account</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email_sign">Email</string>
+    <string name="password_sign">Password</string>
+    <string name="repeat_password">Repeat Password</string>
+    <string name="create_account">CREATE ACCOUNT</string>
+    <string name="valueExpertise">Expertise</string>
+    <string name="valuePreviousWork">Previous Work</string>
+    <string name="valueConnections">Connections</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+
+        "3D world.\n\n"
+
+        "The material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z-axis and has a standard 1dp thickness.\n"
+        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+
+        "Resting elevation.\n\n"
+
+        "All material objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible.\n\n"
+
+        "Component elevations.\n\n"
+
+        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app).\n"
+        "Components may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+
+        "Responsive elevation and dynamic elevation offsets.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+
+        "Avoiding elevation interference.\n\n"
+
+        "Components with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
+        "through other material, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout.\n"
+        "On a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears.\n"
+        "On the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n\n"
+    </string>
+    <string name="showconnections_summary_off">No connections are displayed on your profile.</string>
+    <string name="showconnections_summary_on">Connection(s) are being displayed on your profile.</string>
+    <string name="linkedin_showsummary_off">Your LinkedIn is not being shown.</string>
+    <string name="linkedin_showsummary_on">Your LinkedIn is being displayed.</string>
+    <string name="linkedin_title">LinkedIn</string>
+    <string name="instagram_title">Instagram</string>
+    <string name="twitter_title">Twitter</string>
+    <string name="website_title">Website</string>
+    <string name="notifications_title">Notifications</string>
+    <string name="security_title">Security</string>
+    <string name="notificationToggle_summary_on">All notifications for PVS Advisor are enabled.</string>
+    <string name="notificationToggle_summary_off">All PVS Advisor notifications are disabled.</string>
+    <string name="instagram_showsummary_off">Your Instagram isn\'t being displayed.</string>
+    <string name="twitter_summary_off">Your Twitter is not being shown.</string>
+    <string name="twitter_summary_on">Your Twitter is being shown.</string>
+    <string name="webstie_summary_off">Your website is not being shown.</string>
+    <string name="website_summary_off">Your website is not being shown.</string>
+    <string name="website_summary_on">Your website is being shown.</string>
+    <string name="notifications_summary_off">All PVS Advisor notifications are enabled.</string>
+    <string name="notifications_summary_on">All PVS Advisor notifications are disabled.</string>
+    <string name="showconnections_settings">Display Connections on Profile</string>
 </resources>

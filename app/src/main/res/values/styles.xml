@@ -7,4 +7,97 @@
         <item name="android:textSize">24sp</item>
         <item name="elevation">10dp</item>
     </style>
+
+    <!-- Upload title Style -->
+    <style name="upload_title">
+        <item name="android:layout_marginTop">60dp</item>
+        <item name="android:textSize">36sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <!-- Upload instruction style -->
+    <style name="upload_instruction">
+        <item name="android:layout_marginStart">72dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/PVS_Purple</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <!-- Upload review section header style -->
+    <style name="upload_review_header">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/PVS_Dark_Purple</item>
+    </style>
+
+    <!-- Used to stylize set of instructions on file_upload page -->
+    <style name="file_upload_creative_commons">
+        <item name="android:padding">10dp</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="uploadNextStyle">
+        <item name="android:layout_marginStart">50dp</item>
+        <item name="android:text">@string/project_next_button</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">36sp</item>
+        <item name="android:background">@drawable/upload_next_button</item>
+    </style>
+
+    <style name="uploadSaveStyle">
+        <item name="android:text">@string/project_save_button</item>
+        <item name="android:textColor">@color/PVS_Purple</item>
+        <item name="android:textSize">36sp</item>
+    </style>
+
+    <!-- Category selection text -->
+    <style name="category_selection_text">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <!-- Upload next and save button layout position style -->
+    <style name="nextSaveLayout">
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginBottom">24dp</item>
+    </style>
+
+    <!--  STYLES FOR LOG IN TEXT VIEW -->
+    <style name="log_in">
+        <item name="android:textSize">36sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <!--  STYLES FOR PLEASE LOG IN TEXT VIEW -->
+    <style name="please_log_">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="email">
+        <item name="android:textSize">18sp</item>
+
+        <item name="android:textColor">#000000</item>
+
+    </style>
+    <style name="forget_pass">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">#756868</item>
+    </style>
+
+    <style name="new_user_">
+        <item name="android:textSize">
+            24sp
+        </item>
+        <item name="android:textColor">
+            #000000
+        </item>
+    </style>
+
+    <style name="Button.yellow" parent="ThemeOverlay.AppCompat">
+        <item name="colorAccent">@color/PVS_Yellow</item>
+    </style>
+
 </resources>
