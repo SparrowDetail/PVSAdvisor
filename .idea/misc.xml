@@ -19,6 +19,7 @@
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.12" />
         <entry key="app/src/main/res/drawable/rectangle_universalprofile.xml" value="0.242" />
         <entry key="app/src/main/res/drawable/rounded_profile_image.xml" value="0.199" />
+        <entry key="app/src/main/res/drawable/splash_image.xml" value="0.199" />
         <entry key="app/src/main/res/drawable/styles_profile.xml" value="0.242" />
         <entry key="app/src/main/res/drawable/thumbnail_edit_button.xml" value="0.199" />
         <entry key="app/src/main/res/drawable/upload_default_thumbnail.xml" value="0.199" />
