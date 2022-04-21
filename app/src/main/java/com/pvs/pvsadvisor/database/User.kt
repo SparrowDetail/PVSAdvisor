@@ -1,7 +1,9 @@
 package com.pvs.pvsadvisor.database
 
 import io.realm.RealmObject
+import io.realm.annotations.PrimaryKey
 
 class User: RealmObject {
-    var userID: Int = 1
-} //test
+    @PrimaryKey var userID: Int = 1
+    var username:String = ""
+}
