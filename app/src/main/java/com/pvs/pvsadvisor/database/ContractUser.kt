@@ -1,8 +1,7 @@
 package com.pvs.pvsadvisor.database
 
-import android.provider.BaseColumns
-
-object ContractUser : BaseColumns {
+/** User Table key data **/
+object ContractUser {
     const val TABLE_NAME = "USER"
     const val PK_USERID = "userID"
     const val KEY_EMAIL = "email"
