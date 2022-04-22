@@ -19,7 +19,7 @@ class DBHelper(context: Context) :
     override fun onCreate(db: SQLiteDatabase?) {
         //Init user table if it doesn't exist
         val createUserTable = ("CREATE TABLE ${ContractUser.TABLE_NAME} (" +
-                "${ContractUser.PK_USERID} INTEGER PRIMARY KEY," +
+                "${ContractUser.PK_USERID} INTEGER PRIMARY KEY AUTOINCREMENT," +
                 "${ContractUser.KEY_EMAIL} TEXT," +
                 "${ContractUser.KEY_PASSWORD} TEXT," +
                 "${ContractUser.KEY_FIRST_NAME} TEXT," +
@@ -29,7 +29,7 @@ class DBHelper(context: Context) :
 
         //Init project table if it doesn't exist
         val createProjectTable = ("CREATE TABLE ${ContractProject.TABLE_NAME} (" +
-                "${ContractProject.PK_PROJECT_ID} INTEGER PRIMARY KEY," +
+                "${ContractProject.PK_PROJECT_ID} INTEGER PRIMARY KEY AUTOINCREMENT," +
                 "${ContractProject.FK_USER_ID} INTEGER FOREIGN KEY," +
                 "${ContractProject.KEY_PROJECT_TITLE} TEXT," +
                 "${ContractProject.KEY_CATEGORIES} TEXT," +
