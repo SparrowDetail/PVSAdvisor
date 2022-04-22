@@ -1,6 +1,6 @@
 package com.pvs.pvsadvisor.database
 
-object ProjectContract {
+object ContractProject {
     const val TABLE_NAME = "PROJECT"
     const val PK_PROJECT_ID = "projectID"
     const val FK_USER_ID = "userID"
