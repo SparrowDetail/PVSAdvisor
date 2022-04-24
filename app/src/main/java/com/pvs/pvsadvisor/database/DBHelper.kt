@@ -41,12 +41,16 @@ class DBHelper(context: Context) :
 
     /** Removes existing data and calls onCreate to upgrade the database on version change **/
     override fun onUpgrade(db: SQLiteDatabase?, oldVersion: Int, newVersion: Int) {
-        //TODO:Change to loop structure
-        //Execute sql command to drop existing tables
-        val sqlUser = "DROP TABLE IF EXISTS ${ContractUser.TABLE_NAME}"
-        db!!.execSQL(sqlUser)
-        val sqlProject = "DROP TABLE IF EXISTS ${ContractProject.TABLE_NAME}"
-        db.execSQL(sqlProject)
+        //Set of tables contained in the db
+        val tableNames = arrayOf(
+            ContractUser.TABLE_NAME,
+            ContractProject.TABLE_NAME
+        )
+        //Executes sql commands to drop existing tables
+        for(i in tableNames) {
+            val sqlUser = "DROP TABLE IF EXISTS $i"
+            db!!.execSQL(sqlUser)
+        }
         //Updates data to new table
         onCreate(db)
     }
