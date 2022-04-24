@@ -1,8 +1,11 @@
 package com.pvs.pvsadvisor.database
 
+import android.annotation.SuppressLint
 import android.content.ContentValues
 import android.content.Context
+import android.database.Cursor
 import android.database.sqlite.SQLiteDatabase
+import android.database.sqlite.SQLiteException
 import android.database.sqlite.SQLiteOpenHelper
 
 /** Database helper class used to create, update, and query the database**/
@@ -30,7 +33,7 @@ class DBHelper(context: Context) :
         //Init project table if it doesn't exist
         val createProjectTable = ("CREATE TABLE ${ContractProject.TABLE_NAME} (" +
                 "${ContractProject.PK_PROJECT_ID} INTEGER PRIMARY KEY AUTOINCREMENT," +
-                "${ContractProject.FK_USER_ID} INTEGER FOREIGN KEY," +
+                "${ContractProject.FK_USER_ID} INTEGER," +
                 "${ContractProject.KEY_PROJECT_TITLE} TEXT," +
                 "${ContractProject.KEY_CATEGORIES} TEXT," +
                 "${ContractProject.KEY_ADVICE_TYPE} TEXT," +
@@ -55,7 +58,9 @@ class DBHelper(context: Context) :
         onCreate(db)
     }
 
-    /** Used to insert new user data to the database **/
+    /** Used to insert new user data to the database
+     *  @param user ModelUser object containing user data to be inserted to database
+     *  @return Long representing success of database insert function, and -1 if failed**/
     fun insertUser(user:ModelUser) : Long {
         //Get writable database
         val db = this.writableDatabase
@@ -75,6 +80,56 @@ class DBHelper(context: Context) :
         db.close()
 
         return complete
+    }
+
+    /** Queries the database for current user data and returns an empty ArrayList if none is found
+     *  @param arg String containing query user's email (i.e. username)
+     *  @return ArrayList of type ModelUser containing all users of the argument email **/
+    @SuppressLint("Range")
+    fun selectUserByEmail(arg : String) : ArrayList<ModelUser> {
+        //Init ModelUser ArrayList
+        val userList = ArrayList<ModelUser>()
+
+        //Generate search query
+        val query = "SELECT * FROM ${ContractUser.TABLE_NAME} " +
+                "WHERE ${ContractUser.KEY_EMAIL} = \"$arg\""
+
+        //Open Readable Database
+        val db = this.readableDatabase
+        var cursor : Cursor? = null
+
+        //Try init cursor
+        try {
+            cursor = db.rawQuery(query, null)
+        } catch (e : SQLiteException) {
+            db.execSQL(query)
+            return ArrayList()
+        }
+
+        //Init Table values
+        var id:Int
+        var email:String
+        var pswd:String
+        var fName:String
+        var lName:String
+        var status:String
+
+        //Iterate through cursor object and return userList
+        if (cursor.moveToFirst()) {
+            do {
+                id = cursor.getInt(cursor.getColumnIndex(ContractUser.PK_USERID))
+                email = cursor.getString(cursor.getColumnIndex(ContractUser.KEY_EMAIL))
+                pswd = cursor.getString(cursor.getColumnIndex(ContractUser.KEY_PASSWORD))
+                fName = cursor.getString(cursor.getColumnIndex(ContractUser.KEY_FIRST_NAME))
+                lName = cursor.getString(cursor.getColumnIndex(ContractUser.KEY_LAST_NAME))
+                status = cursor.getString(cursor.getColumnIndex(ContractUser.KEY_STATUS))
+
+                val user = ModelUser(id,email,pswd,fName,lName,status)
+                userList.add(user)
+            } while (cursor.moveToNext())
+        }
+        cursor.close()
+        return userList
     }
 
 
