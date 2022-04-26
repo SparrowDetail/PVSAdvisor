@@ -6,6 +6,7 @@ import android.view.Menu
 import android.view.MenuItem
 import androidx.fragment.app.commit
 import androidx.fragment.app.replace
+import com.pvs.pvsadvisor.database.DBHelper
 
 /*
  * Main function for Prime Vice Advisor.
@@ -15,6 +16,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        val dbControl : DBHelper = DBHelper(this)
 
         //This will vary on user or advisor status
         val status = "user"
