@@ -40,10 +40,31 @@ class DBHelper(context: Context) :
                 "${ContractProject.KEY_ADVICE_DESCRIPTION} TEXT," +
                 "${ContractProject.KEY_FORMAT_TYPE} TEXT," +
                 " FOREIGN KEY (${ContractProject.FK_USER_ID}) " +
-                " REFERENCES ${ContractUser.TABLE_NAME} (${ContractUser.PK_USERID})" +
-                " ON DELETE CASCADE ON UPDATE NO ACTION );" )
+                " REFERENCES ${ContractUser.TABLE_NAME} (${ContractUser.PK_USERID}) );" )
         db?.execSQL(createProjectTable)
 
+        //Init project image table
+        val createProjectImage = ("CREATE TABLE ${ContractProjectImage.TABLE_NAME} (" +
+                "${ContractProjectImage.PK_IMAGE_ID} INTEGER PRIMARY KEY AUTOINCREMENT," +
+                "${ContractProjectImage.FK_PROJECT_ID} INTEGER," +
+                "${ContractProjectImage.KEY_IMAGE_ADDRESS} BLOB," +
+                "${ContractProjectImage.KEY_THUMBNAIL} TEXT," +
+                "FOREIGN KEY (${ContractProjectImage.FK_PROJECT_ID}) " +
+                "REFERENCES ${ContractProject.TABLE_NAME} (${ContractProject.PK_PROJECT_ID}) );")
+        db?.execSQL(createProjectImage)
+
+        //Init advice table
+        val createAdviceTable = ("CREATE TABLE ${ContractAdvice.TABLE_NAME} (" +
+                "${ContractAdvice.PK_ADVICE_ID} INTEGER PRIMARY KEY AUTOINCREMENT," +
+                "${ContractAdvice.FK_ADVISOR_ID} INTEGER," +
+                "${ContractAdvice.FK_PROJECT_ID} INTEGER," +
+                "${ContractAdvice.KEY_FEEDBACK} TEXT," +
+                "${ContractAdvice.KEy_DOCUMENT_ADDRESS} BLOB," +
+                "FOREIGN KEY (${ContractAdvice.FK_ADVISOR_ID})" +
+                "REFERENCES ${ContractUser.TABLE_NAME} (${ContractUser.PK_USERID})," +
+                "FOREIGN KEY (${ContractAdvice.FK_PROJECT_ID})" +
+                "REFERENCES ${ContractProject.TABLE_NAME} (${ContractProject.PK_PROJECT_ID}) );")
+        db?.execSQL(createAdviceTable)
 
     }
 
