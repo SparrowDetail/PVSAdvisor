@@ -2,9 +2,12 @@ package com.pvs.pvsadvisor
 
 import android.content.Intent
 import android.graphics.Color
+import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.transition.Explode
 import android.view.View
+import android.view.Window
 import android.widget.Button
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
@@ -16,7 +19,6 @@ import com.ramotion.paperonboarding.PaperOnboardingPage
 import java.util.ArrayList
 
 class OnboardActivity : AppCompatActivity() {
-    lateinit var getStartedBTN : Button
     private var fragmentManager: FragmentManager? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -43,10 +45,22 @@ class OnboardActivity : AppCompatActivity() {
         val buttonGetStarted : Button = findViewById(R.id.btnGetStarted)
         buttonGetStarted.setOnClickListener {
             val loginFragment = LoginFragment()
-            val fragment : Fragment? = supportFragmentManager.findFragmentByTag(loginFragment::class.java.simpleName)
+            val fragment : Fragment? = supportFragmentManager.findFragmentByTag(
+                loginFragment::class.java.simpleName)
             if(fragment !is LoginFragment){
-                buttonGetStarted.visibility = View.GONE;
-                supportFragmentManager.beginTransaction().add(R.id.LinearFragment_Container, loginFragment, LoginFragment::class.java.simpleName).commit()
+                // Checks for AndroidOS API functionality to see if transition is compatible.
+//                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+//                    with(window) {
+//                        requestFeature(Window.FEATURE_ACTIVITY_TRANSITIONS)
+//
+//                        // set an exit transition
+//                        exitTransition = Explode()
+//                    }
+//                } else {
+                    buttonGetStarted.visibility = View.GONE;
+//                }
+                supportFragmentManager.beginTransaction().add(R.id.LinearFragment_Container,
+                    loginFragment, LoginFragment::class.java.simpleName).commit()
             }
         }
 
@@ -67,23 +81,23 @@ class OnboardActivity : AppCompatActivity() {
             // and at last icon to navigate from one screen to other
             val source = PaperOnboardingPage(
                 "Share Your Vision",
-                "All examples rely on the best enlgish programmers.",
+                "We aim to bring compelling ideas to life through visual story telling. Our mission is to use sequential art to empower communities to own their narratives and provide the tools to turn their ideas into viable assets. Taking your vision to the next step.\n",
                 Color.parseColor("#E0AEFF"),
-                R.drawable.ic_dreameronboard,
+                R.drawable.art,
                 R.drawable.ic_baseline_search_24
             )
             val source1 = PaperOnboardingPage(
                 "Advice from Professionals",
-                "All examples rely on the best enlgish programmers.",
+                "Prime Vice is setting the standard for sequiential art. As we continue to improve others and our creativity through many workshops and personal projects within our lifetime. Bringing high-caliber expertise to people like you.",
                 Color.parseColor("#D3D3D3"),
-                R.drawable.ic_workingremotelyonboard,
+                R.drawable.doctor,
                 R.drawable.ic_baseline_cell_tower_24
             )
             val source2 = PaperOnboardingPage(
                 "The Dream is Now Reality",
-                "All examples rely on the best enlgish programmers.",
+                "Take our hand, and we will guide you through our premium services in the Official Prime Studio App. Together, in a new one-on-one format, can give live and credible feedback without hassle. One tap away from talking with an expert.",
                 Color.parseColor("#221F20"),
-                R.drawable.ic_teamcollabonboard,
+                R.drawable.comic,
                 R.drawable.ic_baseline_checklist_24
             )
             // array list is used to store

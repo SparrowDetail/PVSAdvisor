@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Chees/StudioProjects/PVSAdvisor/app/src/main/res/drawable/ic_dreameronboard.xml" value="0.399" />
+        <entry key="..\:/Users/Chees/StudioProjects/PVSAdvisor/app/src/main/res/drawable/ic_lightbulb.xml" value="0.399" />
         <entry key="..\:/Users/Chees/StudioProjects/PVSAdvisor/app/src/main/res/drawable/icon_background.xml" value="0.3165" />
         <entry key="..\:/Users/Chees/StudioProjects/PVSAdvisor/app/src/main/res/drawable/icon_outer_background.xml" value="0.3165" />
         <entry key="..\:/Users/Chees/StudioProjects/PVSAdvisor/app/src/main/res/drawable/rounded_profile_image.xml" value="0.5395" />
@@ -24,9 +25,10 @@
         <entry key="..\:/Users/Chees/StudioProjects/PVSAdvisor/app/src/main/res/layout/fragment_user_settings__notifications.xml" value="0.36822916666666666" />
         <entry key="..\:/Users/Chees/StudioProjects/PVSAdvisor/app/src/main/res/layout/main_home_fragment.xml" value="0.41847826086956524" />
         <entry key="..\:/Users/Chees/StudioProjects/PVSAdvisor/app/src/main/res/layout/main_messaging_fragment.xml" value="0.36822916666666666" />
-        <entry key="..\:/Users/Chees/StudioProjects/PVSAdvisor/app/src/main/res/layout/main_profile_fragment.xml" value="0.36822916666666666" />
+        <entry key="..\:/Users/Chees/StudioProjects/PVSAdvisor/app/src/main/res/layout/main_profile_fragment.xml" value="0.2710926694329184" />
         <entry key="..\:/Users/Chees/StudioProjects/PVSAdvisor/app/src/main/res/layout/mainfragment_scrolling_messaging.xml" value="0.1" />
         <entry key="..\:/Users/Chees/StudioProjects/PVSAdvisor/app/src/main/res/layout/onboarding_item_container.xml" value="0.41847826086956524" />
+        <entry key="..\:/Users/Chees/StudioProjects/PVSAdvisor/app/src/main/res/layout/settings_activity.xml" value="0.41847826086956524" />
         <entry key="..\:/Users/Chees/StudioProjects/PVSAdvisor/app/src/main/res/layout/upload_main_activity.xml" value="0.17907801418439717" />
         <entry key="..\:/Users/Chees/StudioProjects/PVSAdvisor/app/src/main/res/layout/user_home.xml" value="0.322463768115942" />
         <entry key="..\:/Users/Chees/StudioProjects/PVSAdvisor/app/src/main/res/layout/user_home_fragment.xml" value="0.1" />
