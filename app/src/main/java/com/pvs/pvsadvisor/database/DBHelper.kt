@@ -27,7 +27,7 @@ class DBHelper(context: Context) :
                 "${ContractUser.KEY_PASSWORD} TEXT," +
                 "${ContractUser.KEY_FIRST_NAME} TEXT," +
                 "${ContractUser.KEY_LAST_NAME} TEXT," +
-                "${ContractUser.KEY_STATUS} TEXT )" )
+                "${ContractUser.KEY_STATUS} TEXT );" )
         db?.execSQL(createUserTable)
 
         //Init project table if it doesn't exist
@@ -38,8 +38,13 @@ class DBHelper(context: Context) :
                 "${ContractProject.KEY_CATEGORIES} TEXT," +
                 "${ContractProject.KEY_ADVICE_TYPE} TEXT," +
                 "${ContractProject.KEY_ADVICE_DESCRIPTION} TEXT," +
-                "${ContractProject.KEY_FORMAT_TYPE} TEXT )" )
+                "${ContractProject.KEY_FORMAT_TYPE} TEXT," +
+                " FOREIGN KEY (${ContractProject.FK_USER_ID}) " +
+                " REFERENCES ${ContractUser.TABLE_NAME} (${ContractUser.PK_USERID})" +
+                " ON DELETE CASCADE ON UPDATE NO ACTION );" )
         db?.execSQL(createProjectTable)
+
+
     }
 
     /** Removes existing data and calls onCreate to upgrade the database on version change **/
