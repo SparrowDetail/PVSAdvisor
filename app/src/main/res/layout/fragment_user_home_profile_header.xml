@@ -6,7 +6,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-
     tools:context=".UserHomeProfileHeaderFragment">
 
 
@@ -14,11 +13,10 @@
 
 
     <!-- TODO:Add generic text styles to use universally -->
-
-    <ImageView
+    <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/profileImageSmall"
-        android:layout_width="64dp"
-        android:layout_height="64dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="10dp"
@@ -26,15 +24,14 @@
         app:layout_constraintEnd_toStartOf="@+id/linearLayout"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars"
-        android:scaleType="centerCrop"/>
+        android:src="@drawable/profile_head"/>
 
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="24dp"
         android:orientation="vertical"
         app:layout_constraintStart_toEndOf="@+id/profileImageSmall"
         app:layout_constraintTop_toTopOf="parent">
@@ -44,7 +41,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/PVS_Purple"
-            android:textSize="18sp"
+            android:textSize="24sp"
             android:text="@string/profile_fragment_welcome" />
 
         <TextView
@@ -53,8 +50,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:textColor="@color/black"
-            android:textSize="16sp"
-            android:text="Jacob Owens" />
+            android:textSize="18sp"
+            android:text="Carlos Perez" />
 
     </LinearLayout>
 
