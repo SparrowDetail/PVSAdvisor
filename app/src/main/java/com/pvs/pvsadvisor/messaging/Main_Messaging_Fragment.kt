@@ -14,6 +14,6 @@ class Main_Messaging_Fragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.mainfragment_scrolling_messaging, container, false)
+        return inflater.inflate(R.layout.main_messaging_fragment, container, false)
     }
 }

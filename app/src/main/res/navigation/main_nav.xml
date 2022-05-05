@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/main_home_fragment">
+
+    <fragment
+        android:id="@+id/main_Messaging_Fragment"
+        android:name="com.pvs.pvsadvisor.messaging.Main_Messaging_Fragment"
+        android:label="main_messaging_fragment"
+        tools:layout="@layout/main_messaging_fragment" />
+    <fragment
+        android:id="@+id/mainProfileFragment"
+        android:name="com.pvs.pvsadvisor.profile.MainProfileFragment"
+        android:label="main_profile_fragment"
+        tools:layout="@layout/main_profile_fragment" />
+    <fragment
+        android:id="@+id/main_home_fragment"
+        android:name="com.pvs.pvsadvisor.MainHomeFragment"
+        android:label="main_home_fragment" />
+</navigation>

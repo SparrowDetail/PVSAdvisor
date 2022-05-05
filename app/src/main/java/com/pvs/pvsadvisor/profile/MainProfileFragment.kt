@@ -5,7 +5,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.navigation.fragment.findNavController
 import com.pvs.pvsadvisor.R
 
 class MainProfileFragment : Fragment() {
@@ -15,7 +14,7 @@ class MainProfileFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_main_user, container, false)
+        return inflater.inflate(R.layout.main_profile_fragment, container, false)
     }
 
 
