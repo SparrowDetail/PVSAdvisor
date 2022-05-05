@@ -80,7 +80,7 @@ class MainActivity : AppCompatActivity() {
 //        if (id == R.id.user_home_profile_directory) {
 //            //TODO:Direct the user to the profile page
 //            return true
-//        }
+//        }a
 //        return super.onOptionsItemSelected(item)
 //    }
 }
