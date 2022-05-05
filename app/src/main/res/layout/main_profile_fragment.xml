@@ -1,136 +1,155 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".profile.MainProfileFragment">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-
         <!-- Expertise Rectangle -->
 
-        <TextView
-            android:id="@+id/tv_Bio_ProfileName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="16dp"
-            android:text="Jacob Owens"
-            android:textSize="24dp"
-            app:layout_constraintStart_toEndOf="@+id/imgView_ProfilePic"
-            app:layout_constraintTop_toTopOf="parent" />
+<!--        <TextView-->
+<!--            android:id="@+id/tv_Bio_ProfileName"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="8dp"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            android:fontFamily="@font/oswald_bold"-->
+<!--            android:text="Carlos Perez"-->
+<!--            android:textColor="@color/PVS_Dark_Purple"-->
+<!--            android:textSize="24dp"-->
+<!--            app:layout_constraintStart_toEndOf="@+id/imgView_ProfilePic"-->
+<!--            app:layout_constraintTop_toTopOf="parent" />-->
 
-        <TextView
-            android:id="@+id/tv_Bio_CareerTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="12dp"
-            android:text="CEO of Chase Bank"
-            android:textSize="18dp"
-            app:layout_constraintStart_toEndOf="@+id/imgView_ProfilePic"
-            app:layout_constraintTop_toBottomOf="@+id/tv_Bio_ProfileName" />
+<!--        <TextView-->
+<!--            android:id="@+id/tv_Bio_CareerTitle"-->
+<!--            android:layout_width="204dp"-->
+<!--            android:layout_height="65dp"-->
+<!--            android:layout_marginStart="8dp"-->
+<!--            android:layout_marginTop="4dp"-->
+<!--            android:fontFamily="@font/oswald_semibold"-->
+<!--            android:text="Founder / Creative Director Sequential Arts Maestro"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="18dp"-->
+<!--            app:layout_constraintStart_toEndOf="@+id/imgView_ProfilePic"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/tv_Bio_ProfileName" />-->
 
-        <ImageView
-            android:id="@+id/imgView_ProfilePic"
-            android:layout_width="157dp"
-            android:layout_height="155dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:srcCompat="@tools:sample/avatars" />
+<!--        <ImageView-->
+<!--            android:id="@+id/imgView_ProfilePic"-->
+<!--            android:layout_width="157dp"-->
+<!--            android:layout_height="155dp"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            tools:srcCompat="@drawable/profilecomponent" />-->
 
-        <TextView
-            android:id="@+id/tv_Connections"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="72dp"
-            android:text="@string/valueConnections"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imgView_ProfilePic" />
+<!--        <TextView-->
+<!--            android:id="@+id/tv_Connections"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            android:layout_marginTop="72dp"-->
+<!--            android:text="@string/valueConnections"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/imgView_ProfilePic" />-->
 
-        <View
-            android:id="@+id/shape_Rect_Expertise"
-            android:layout_width="370dp"
-            android:layout_height="36dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="25dp"
-            android:layout_marginTop="156dp"
-            android:layout_marginEnd="25dp"
-            android:background="@drawable/rectangle_universalprofile"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.555"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imgView_ProfilePic" />
+<!--        <View-->
+<!--            android:id="@+id/shape_Rect_Expertise"-->
+<!--            android:layout_width="370dp"-->
+<!--            android:layout_height="36dp"-->
+<!--            android:layout_alignParentLeft="true"-->
+<!--            android:layout_alignParentTop="true"-->
+<!--            android:layout_marginStart="25dp"-->
+<!--            android:layout_marginTop="156dp"-->
+<!--            android:layout_marginEnd="25dp"-->
+<!--            android:background="@drawable/rectangle_universalprofile"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.555"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/imgView_ProfilePic" />-->
 
-        <View
-            android:id="@+id/shape_Rect_PrevWorks"
-            android:layout_width="370dp"
-            android:layout_height="36dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="25dp"
-            android:layout_marginTop="168dp"
-            android:layout_marginEnd="25dp"
-            android:background="@drawable/rectangle_universalprofile"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.444"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/shape_Rect_Expertise" />
+<!--        <View-->
+<!--            android:id="@+id/shape_Rect_PrevWorks"-->
+<!--            android:layout_width="370dp"-->
+<!--            android:layout_height="36dp"-->
+<!--            android:layout_alignParentLeft="true"-->
+<!--            android:layout_alignParentTop="true"-->
+<!--            android:layout_marginStart="25dp"-->
+<!--            android:layout_marginTop="168dp"-->
+<!--            android:layout_marginEnd="25dp"-->
+<!--            android:background="@drawable/rectangle_universalprofile"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.444"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/shape_Rect_Expertise" />-->
 
-        <!--        <TextView-->
-        <!--            android:id="@+id/tv_ProfilePrevWork"-->
-        <!--            android:layout_width="wrap_content"-->
-        <!--            android:layout_height="wrap_content"-->
-        <!--            android:text="@string/valuePreviousWork"-->
-        <!--            android:textColor="#FFFFFF"-->
-        <!--            tools:layout_editor_absoluteX="33dp"-->
-        <!--            tools:layout_editor_absoluteY="538dp" />-->
+<!--        &lt;!&ndash;        <TextView&ndash;&gt;-->
+<!--        &lt;!&ndash;            android:id="@+id/tv_ProfilePrevWork"&ndash;&gt;-->
+<!--        &lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
+<!--        &lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--        &lt;!&ndash;            android:text="@string/valuePreviousWork"&ndash;&gt;-->
+<!--        &lt;!&ndash;            android:textColor="#FFFFFF"&ndash;&gt;-->
+<!--        &lt;!&ndash;            tools:layout_editor_absoluteX="33dp"&ndash;&gt;-->
+<!--        &lt;!&ndash;            tools:layout_editor_absoluteY="538dp" />&ndash;&gt;-->
 
-        <View
-            android:id="@+id/shape_Rect_PVS"
-            android:layout_width="370dp"
-            android:layout_height="36dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="25dp"
-            android:layout_marginTop="68dp"
-            android:layout_marginEnd="25dp"
-            android:background="@drawable/rectangle_universalprofile"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.444"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/shape_Rect_PrevWorks" />
+<!--        <View-->
+<!--            android:id="@+id/shape_Rect_PVS"-->
+<!--            android:layout_width="370dp"-->
+<!--            android:layout_height="36dp"-->
+<!--            android:layout_alignParentLeft="true"-->
+<!--            android:layout_alignParentTop="true"-->
+<!--            android:layout_marginStart="25dp"-->
+<!--            android:layout_marginTop="68dp"-->
+<!--            android:layout_marginEnd="25dp"-->
+<!--            android:background="@drawable/rectangle_universalprofile"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.444"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/shape_Rect_PrevWorks" />-->
 
-        <!--        <TextView-->
-        <!--            android:id="@+id/tv_ProfileExpertise"-->
-        <!--            android:layout_width="wrap_content"-->
-        <!--            android:layout_height="wrap_content"-->
-        <!--            android:text="@string/valueExpertise"-->
-        <!--            android:textColor="#FFFFFF"-->
-        <!--            tools:layout_editor_absoluteX="34dp"-->
-        <!--            tools:layout_editor_absoluteY="335dp"/>-->
+<!--        &lt;!&ndash;        <TextView&ndash;&gt;-->
+<!--        &lt;!&ndash;            android:id="@+id/tv_ProfileExpertise"&ndash;&gt;-->
+<!--        &lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
+<!--        &lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--        &lt;!&ndash;            android:text="@string/valueExpertise"&ndash;&gt;-->
+<!--        &lt;!&ndash;            android:textColor="#FFFFFF"&ndash;&gt;-->
+<!--        &lt;!&ndash;            tools:layout_editor_absoluteX="34dp"&ndash;&gt;-->
+<!--        &lt;!&ndash;            tools:layout_editor_absoluteY="335dp"/>&ndash;&gt;-->
 
-        <Button
-            android:id="@+id/btn_ProfileSettings"
-            android:layout_width="158dp"
-            android:layout_height="48dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
-            android:background="#351644"
-            android:text="Settings"
-            android:textColor="#FFFFFF"
-            android:textSize="10sp"
-            app:iconPadding="8dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imgView_ProfilePic" />
+<!--        <Button-->
+<!--            android:id="@+id/btn_ProfileSettings"-->
+<!--            android:layout_width="158dp"-->
+<!--            android:layout_height="48dp"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:background="#351644"-->
+<!--            android:text="Settings"-->
+<!--            android:textColor="#FFFFFF"-->
+<!--            android:textSize="10sp"-->
+<!--            app:iconPadding="8dp"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/imgView_ProfilePic" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/textView2"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:fontFamily="@font/oswald_semibold"-->
+<!--            android:text="Expertise"-->
+<!--            android:textColor="#FFFFFF"-->
+<!--            tools:layout_editor_absoluteX="40dp"-->
+<!--            tools:layout_editor_absoluteY="333dp" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/textView4"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:fontFamily="@font/oswald_semibold"-->
+<!--            android:text="Prime Vice Studios"-->
+<!--            android:textColor="#FFFFFF"-->
+<!--            tools:layout_editor_absoluteX="37dp"-->
+<!--            tools:layout_editor_absoluteY="537dp" />-->
 
         <!--        <fragment-->
         <!--            android:id="@+id/settingsFragment"-->
@@ -145,5 +164,29 @@
 
         <!--        &lt;!&ndash;            app:layout_constraintTop_toBottomOf="@+id/">&ndash;&gt;-->
         <!--        </fragment>-->
-    </androidx.constraintlayout.widget.ConstraintLayout>
-</androidx.core.widget.NestedScrollView>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="320px"
+        android:scaleX="1.4"
+        android:scaleY="1.4"
+        android:src="@drawable/backgroundprofcomponent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settingsBtn" />
+
+    <Button
+        android:id="@+id/settingsBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="210dp"
+        android:layout_marginTop="190dp"
+        android:width="140dp"
+        android:backgroundTint="#A8A5A5"
+        android:fontFamily="sans-serif"
+        android:text="Settings"
+        android:textAllCaps="false"
+        android:textSize="16sp" />
+
+</RelativeLayout>

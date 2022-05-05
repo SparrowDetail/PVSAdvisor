@@ -19,11 +19,11 @@ class MainProfileFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val settingsBtn = view.findViewById<Button>(R.id.btn_ProfileSettings)
+        val settingsBtn = view.findViewById<Button>(R.id.settingsBtn)
         settingsBtn.setOnClickListener{
-            val intent = Intent(view.context, SettingsActivity::class.java)
-            startActivity(intent)
-//            startActivity(Intent(Settings.ACTION_SETTINGS))
+//            val intent = Intent(view.context, SettingsActivity::class.java)
+//            startActivity(intent)
+            startActivity(Intent(Settings.ACTION_SETTINGS))
         }
     }
 

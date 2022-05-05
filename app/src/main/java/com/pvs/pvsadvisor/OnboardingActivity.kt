@@ -1,19 +1,12 @@
 package com.pvs.pvsadvisor
 
-import android.content.Intent
 import android.graphics.Color
-import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.transition.Explode
 import android.view.View
-import android.view.Window
 import android.widget.Button
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
-import com.google.android.material.bottomnavigation.BottomNavigationView
-import com.pvs.pvsadvisor.R
-import com.pvs.pvsadvisor.upload.UploadMain
 import com.ramotion.paperonboarding.PaperOnboardingFragment
 import com.ramotion.paperonboarding.PaperOnboardingPage
 import java.util.ArrayList
@@ -81,21 +74,29 @@ class OnboardActivity : AppCompatActivity() {
             // and at last icon to navigate from one screen to other
             val source = PaperOnboardingPage(
                 "Share Your Vision",
-                "We aim to bring compelling ideas to life through visual story telling. Our mission is to use sequential art to empower communities to own their narratives and provide the tools to turn their ideas into viable assets. Taking your vision to the next step.\n",
+                "We aim to bring compelling ideas to life through visual story telling. " +
+                        "Our mission is to use sequential art to empower communities to own their " +
+                        "narratives and provide the tools to turn their ideas into viable assets. " +
+                        "Taking your vision to the next step.\n",
                 Color.parseColor("#E0AEFF"),
                 R.drawable.art,
                 R.drawable.ic_baseline_search_24
             )
             val source1 = PaperOnboardingPage(
                 "Advice from Professionals",
-                "Prime Vice is setting the standard for sequiential art. As we continue to improve others and our creativity through many workshops and personal projects within our lifetime. Bringing high-caliber expertise to people like you.",
+                "Prime Vice is setting the standard for sequiential art. As we continue " +
+                        "to improve others and our creativity through many workshops and personal " +
+                        "projects within our lifetime. Bringing high-caliber expertise to people like you.",
                 Color.parseColor("#D3D3D3"),
                 R.drawable.doctor,
                 R.drawable.ic_baseline_cell_tower_24
             )
             val source2 = PaperOnboardingPage(
                 "The Dream is Now Reality",
-                "Take our hand, and we will guide you through our premium services in the Official Prime Studio App. Together, in a new one-on-one format, can give live and credible feedback without hassle. One tap away from talking with an expert.",
+                "Take our hand, and we will guide you through our premium services in " +
+                        "the Official Prime Studio App. Together, in a new one-on-one format, can " +
+                        "give live and credible feedback without hassle. One tap away from talking " +
+                        "with an expert.",
                 Color.parseColor("#221F20"),
                 R.drawable.comic,
                 R.drawable.ic_baseline_checklist_24

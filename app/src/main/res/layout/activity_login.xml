@@ -38,8 +38,8 @@
 
     <androidx.appcompat.widget.AppCompatEditText
         android:id="@+id/editTextTextEmailAddress"
-        android:layout_width="290dp"
-        android:layout_height="50dp"
+        android:layout_width="293dp"
+        android:layout_height="53dp"
         android:layout_below="@+id/textView_email"
         android:layout_centerHorizontal="true"
         android:autofillHints=""
@@ -62,8 +62,8 @@
 
     <androidx.appcompat.widget.AppCompatEditText
         android:id="@+id/editTextTextPassword"
-        android:layout_width="290dp"
-        android:layout_height="40dp"
+        android:layout_width="292dp"
+        android:layout_height="53dp"
         android:layout_below="@+id/textView_password"
         android:layout_centerHorizontal="true"
         android:autofillHints=""
